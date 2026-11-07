@@ -1,0 +1,466 @@
+{
+  "brand": {
+    "name": "GOAT Handyman & Remodeling",
+    "tagline": "Long Island's Trusted Handyman & Remodeling Experts",
+    "phone": "(516) 447-4976",
+    "phoneRaw": "5164474976",
+    "email": "goathandymanremodeling@gmail.com",
+    "address": "64 Hilton Ave, Suite 3B",
+    "city": "Hempstead",
+    "state": "NY",
+    "zip": "11550",
+    "hours": "Sun-Fri 8am-6pm (Sat Closed)",
+    "domain": "www.goathandymanremodeling.com",
+    "baseUrl": "/goat-preview",
+    "zapierWebhook": "",
+    "font": "Outfit",
+    "fontBody": "Inter",
+    "fontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap",
+    "accentColor": "#f4c542",
+    "accentDark": "#d4a832",
+    "primaryColor": "#1a1a1a",
+    "primaryDark": "#0d0d0d",
+    "secondaryColor": "#2d2d2d",
+    "secondaryDark": "#1a1a1a",
+    "schemaType": "HomeAndConstructionBusiness",
+    "industry": "Handyman & Remodeling",
+    "industryLower": "handyman & remodeling",
+    "footerTagline": "Professional handyman and remodeling services across Nassau and Suffolk Counties. Insured and committed to quality craftsmanship.",
+    "heroSubtext": "Local, family-owned handyman services delivering quality repairs, renovations, and remodeling for Long Island homeowners. Insured and backed by our workmanship warranty.",
+    "servicesHeadline": "Professional Handyman & Remodeling Services",
+    "servicesSubtext": "From kitchen remodels and bathroom renovations to drywall repair and deck installation - professional service for Long Island homeowners.",
+    "facebook": "",
+    "instagram": "",
+    "googleMapsEmbed": "",
+    "heroSlides": [
+      "/images/hero-slide-1.jpg",
+      "/images/hero-slide-2.jpg",
+      "/images/hero-slide-3.jpg"
+    ]
+  },
+  "services": [
+    {
+      "slug": "handyman-services",
+      "name": "Handyman Services",
+      "shortName": "Handyman",
+      "icon": "🔧",
+      "image": "/images/services/handyman.jpg",
+      "description": "Professional handyman services for Nassau and Suffolk homeowners tackling multi-room repair projects.",
+      "heroText": "GOAT Handyman & Remodeling helps homeowners in Nassau and Suffolk counties tackle repair projects that span several rooms. A single estimate can cover interior door replacement, stair and railing repairs, new trim, drywall finishing, and painting. If you're updating a home before moving in or working through a growing repair list, send us the full scope. We can plan the work in sequence so the doors and trim are in place before the final coat of paint.",
+      "bullets": [
+        "Multi-room handyman projects and home repair punch lists",
+        "Interior door, frame, and casing replacement",
+        "Stair and railing repairs",
+        "Baseboard and trim installation across multiple rooms",
+        "Drywall repair and interior painting"
+      ],
+      "faqs": [
+        {
+          "q": "What types of projects can a handyman company handle?",
+          "a": "A handyman company can handle a range of repairs and improvements, including drywall patching, trim work, door adjustments, and replacing worn home components. GOAT's services also include larger home improvement and remodeling projects. The appropriate provider depends on the work involved, including any licensing, permit, or specialist requirements—not simply the size of the job."
+        },
+        {
+          "q": "Can several home repairs be combined into one project?",
+          "a": "Yes. Related repairs can often be grouped into one project, such as repairing drywall, replacing baseboards, and adjusting interior doors. Combining the work can reduce repeated setup and help coordinate the finishing. Some projects still require multiple visits because of material deliveries, drying time, or the order in which tasks must be completed."
+        }
+      ]
+    },
+    {
+      "slug": "home-repair",
+      "name": "Home Repair Services",
+      "shortName": "Home Repair",
+      "icon": "🏠",
+      "image": "/images/services/home-repair.jpg",
+      "description": "Professional home repair services for damage affecting walls, flooring, and woodwork under one estimate.",
+      "heroText": "When damage affects several parts of a room, we can repair the walls, flooring, and woodwork under one estimate. In a finished basement in Roslyn, for example, GOAT repaired drywall, replaced flooring and baseboards, and repainted after water damage. Once the source of a leak is fixed and the space is dry, we assess which materials can stay and which need replacement. We also handle exterior tile removal and replacement where damage extends across an outdoor surface.",
+      "bullets": [
+        "Finished basement and interior room repairs",
+        "Wall and ceiling replacement after water damage",
+        "Damaged flooring removal and replacement",
+        "Baseboard and door casing replacement",
+        "Interior painting after repairs",
+        "Exterior tile removal and replacement"
+      ],
+      "faqs": [
+        {
+          "q": "Which home repairs should I address first?",
+          "a": "Address immediate safety concerns and active water intrusion before cosmetic damage. A leaking window, unstable railing, or deteriorating surface can lead to additional problems if left unresolved. Once the cause is corrected, plan repairs to affected materials, followed by painting and finish work. Covering damage without addressing its source often leads to repeat repairs."
+        },
+        {
+          "q": "Why does the same ceiling stain or damaged area keep coming back?",
+          "a": "Recurring damage usually means the underlying cause has not been fully resolved. A ceiling stain may return because of an ongoing leak, condensation, or moisture remaining in the materials. Before repainting or patching, identify the source, correct it, and confirm the area has dried sufficiently. Damaged materials may also need replacement."
+        }
+      ]
+    },
+    {
+      "slug": "drywall-repair",
+      "name": "Drywall Repair & Installation",
+      "shortName": "Drywall",
+      "icon": "🔨",
+      "image": "/images/services/drywall-repair.jpg",
+      "description": "Professional drywall installation and replacement in basements, garages, and living spaces across Nassau and Suffolk counties.",
+      "heroText": "GOAT Handyman & Remodeling installs and replaces drywall in finished basements, garages, and living spaces across Nassau and Suffolk counties. We handle projects ranging from replacing a damaged ceiling to hanging and finishing drywall throughout an entire room. If a leak damages the walls or ceiling, we can replace the affected drywall once the leak is fixed and the area is dry. We can also include primer, paint, and replacement baseboards in the same estimate so the room is ready to use again.",
+      "bullets": [
+        "Full-room drywall installation",
+        "Drywall ceiling repair and replacement",
+        "Basement and garage drywall installation",
+        "Water-damaged wall and ceiling replacement",
+        "Drywall taping, spackling, and sanding",
+        "Priming and painting walls and ceilings"
+      ],
+      "faqs": [
+        {
+          "q": "Can water-damaged drywall be repaired, or does it need to be replaced?",
+          "a": "Water-damaged drywall does not always require replacing the entire wall or ceiling, but softened, swollen, sagging, or deteriorated sections generally need removal and replacement. A dry stain on otherwise sound drywall may need only surface preparation and repainting. The decision depends on the material's condition, the water source, and any contamination or mold concerns."
+        },
+        {
+          "q": "Will a drywall patch still be visible after painting?",
+          "a": "A properly finished drywall patch should blend with the surrounding surface, but the result depends on more than the patch itself. Joint compound must be feathered, dried, sanded, and primed appropriately. Texture, paint sheen, lighting, and aging paint also affect the match. Repainting the full wall or ceiling plane may produce a more consistent appearance than touching up the patch alone."
+        }
+      ]
+    },
+    {
+      "slug": "carpentry",
+      "name": "Carpentry Services",
+      "shortName": "Carpentry",
+      "icon": "🪚",
+      "image": "/images/services/carpentry.jpg",
+      "description": "Finish carpentry throughout individual rooms, hallways, and entire floors on Long Island.",
+      "heroText": "GOAT installs finish carpentry throughout individual rooms, hallways, and entire floors. If you're replacing flooring or interior doors, we can fit the baseboards, crown molding, and casing together so the profiles carry from one room into the next. We also build shelving for alcoves and storage areas, repair interior stairs, and install railings. When a home has original woodwork you want to keep, we use the existing trim as the reference for the new pieces.",
+      "bullets": [
+        "Crown molding installation",
+        "Whole-room and multi-room baseboard installation",
+        "Door and window casing replacement",
+        "Built-in shelving and storage carpentry",
+        "Interior stair and railing repair or replacement",
+        "Damaged and rotted wood trim replacement"
+      ],
+      "faqs": [
+        {
+          "q": "Can damaged baseboards and trim be repaired instead of replaced?",
+          "a": "Small dents, nail holes, and localized damage can often be filled, sanded, and refinished when the surrounding material is sound. Replacement is usually more appropriate for extensively deteriorated, swollen, or badly split trim. The decision also depends on whether the existing profile can be matched and whether the finish will be painted or stained."
+        },
+        {
+          "q": "Is PVC trim a good replacement for exterior wood trim?",
+          "a": "PVC trim can be a practical option for nonstructural exterior trim because it resists moisture absorption and rot. It is commonly used around windows, doors, and other exposed areas. However, replacing wood with PVC does not fix leaks behind the trim. Flashing, drainage, fastening, and allowance for material movement still need proper attention."
+        }
+      ]
+    },
+    {
+      "slug": "door-repair",
+      "name": "Door Repair & Installation",
+      "shortName": "Doors",
+      "icon": "🚪",
+      "image": "/images/services/door-repair.jpg",
+      "description": "Exterior entry doors, storm doors, and interior door replacement across Long Island homes.",
+      "heroText": "GOAT replaces exterior entry doors, storm doors, and sets of interior doors. For a front entry, we inspect the jamb, threshold, and surrounding trim so the estimate covers any carpentry the new door needs. When replacing doors throughout a home, we measure each opening individually and account for differences in flooring height and frame alignment. We fit the hinges, handles, and latches and check that each door opens freely and closes securely.",
+      "bullets": [
+        "Front entry door replacement",
+        "Multi-door interior replacement projects",
+        "Storm door and screen door installation",
+        "Door frame, jamb, and threshold repair",
+        "Door casing and exterior trim replacement",
+        "Door alignment and hardware installation"
+      ],
+      "faqs": [
+        {
+          "q": "Can I replace an interior door without replacing the frame?",
+          "a": "Yes, an interior door slab can often be replaced while keeping the existing frame if the frame is sound, square, and suitable for the new door. The replacement must match the opening, hinge locations, thickness, and hardware requirements. A damaged or badly misaligned frame may make replacing the complete prehung door assembly the better option."
+        },
+        {
+          "q": "Does a drafty exterior door need to be replaced?",
+          "a": "Not necessarily. Drafts may come from worn weatherstripping, a damaged door sweep, or gaps caused by poor alignment. Those problems may be repairable when the door and frame are otherwise sound. Replacement becomes more appropriate when significant warping, deterioration, or damage prevents the door from closing and sealing reliably."
+        }
+      ]
+    },
+    {
+      "slug": "window-repair",
+      "name": "Window Repair & Installation",
+      "shortName": "Windows",
+      "icon": "🪟",
+      "image": "/images/services/window-repair.jpg",
+      "description": "Window repair and replacement with carpentry repairs and exterior sealing in one estimate.",
+      "heroText": "When several windows are difficult to open, drafty, or surrounded by deteriorated wood, the right scope can vary from one opening to the next. GOAT checks the sash, sill, frame, and surrounding trim before recommending repair or replacement. We can combine replacement windows, carpentry repairs, and exterior sealing in one estimate. You'll know which openings need new units and where repairing the existing window and woodwork makes sense.",
+      "bullets": [
+        "Multi-window repair and replacement projects",
+        "Replacement window installation",
+        "Window sash and frame repair",
+        "Damaged sill and rotted exterior trim replacement",
+        "Interior window casing installation",
+        "Exterior caulking and sealing around window frames"
+      ],
+      "faqs": [
+        {
+          "q": "Does condensation on a window mean the window needs replacement?",
+          "a": "Not always. Condensation on the room-side surface often relates to indoor humidity and cold glass, rather than window failure. Persistent moisture between the panes of a sealed insulated-glass unit usually indicates a failed seal. Depending on the window design and available parts, the solution may involve replacing the glass unit, sash, or complete window."
+        },
+        {
+          "q": "What is the difference between insert and full-frame window replacement?",
+          "a": "Insert replacement fits a new window into an existing frame that is in good condition. Full-frame replacement removes the existing frame as well, allowing the opening and surrounding conditions to be addressed. Rot, significant distortion, or water-management problems can make full-frame replacement more appropriate. The choice should follow an inspection of the existing window and opening."
+        }
+      ]
+    },
+    {
+      "slug": "flooring",
+      "name": "Flooring Repair & Installation",
+      "shortName": "Flooring",
+      "icon": "🏠",
+      "image": "/images/services/flooring.jpg",
+      "description": "Vinyl plank, laminate, hardwood, and tile flooring installation for bedrooms, hallways, and basements.",
+      "heroText": "GOAT installs vinyl plank, laminate, hardwood, and tile flooring in bedrooms, hallways, basements, and adjoining living spaces. We also refinish existing hardwood floors and replace damaged flooring as part of a room repair. For a multi-room installation, we check the surface beneath the old floor and plan how the new material will run through doorways. Removal, preparation, baseboards, and transitions can all be included in the flooring estimate.",
+      "bullets": [
+        "Multi-room flooring removal and replacement",
+        "Luxury vinyl plank and laminate installation",
+        "Hardwood floor installation and refinishing",
+        "Tile floor installation and replacement",
+        "Damaged board or plank replacement",
+        "Baseboard and doorway transition installation"
+      ],
+      "faqs": [
+        {
+          "q": "Can damaged hardwood flooring be repaired without replacing the entire room?",
+          "a": "Often, yes. Localized damage may be addressed by replacing individual boards or refinishing an affected area. The options depend on the wood species, board dimensions, finish, installation method, and extent of the damage. Water-related problems require moisture assessment first. Matching aged flooring can be difficult, so a wider refinishing area may be needed for a consistent result."
+        },
+        {
+          "q": "Can luxury vinyl flooring be installed over an existing floor?",
+          "a": "Sometimes. Certain luxury vinyl products can be installed over existing flooring when the surface meets the manufacturer's requirements for condition, flatness, stability, and moisture. Loose flooring, significant unevenness, or unsuitable layers may require removal or preparation first. Added floor height must also be checked at doors, transitions, and appliances. The selected product's installation instructions determine what is acceptable."
+        }
+      ]
+    },
+    {
+      "slug": "deck-repair",
+      "name": "Deck Repair & Installation",
+      "shortName": "Decks",
+      "icon": "🏡",
+      "image": "/images/services/deck-repair.jpg",
+      "description": "Deck resurfacing, rebuilding, and new deck installation with proper framing inspection.",
+      "heroText": "Worn deck boards can hide a larger issue, while a deck with sound framing may only need a new surface, stairs, and railings. GOAT checks the framing beneath the walking surface before quoting the project. We can resurface an existing deck, rebuild deteriorated sections, or replace the deck when the underlying structure is unsuitable for reuse. For new decks, we plan the walking area, stair access, and railing layout together.",
+      "bullets": [
+        "Deck resurfacing and board replacement",
+        "Deck stair repair and rebuilding",
+        "Deck railing replacement",
+        "Partial deck rebuilding",
+        "Full deck replacement",
+        "New deck installation"
+      ],
+      "faqs": [
+        {
+          "q": "How do I know whether my deck needs repairs or replacement?",
+          "a": "The condition of the supporting structure matters more than the appearance of the deck boards. Localized surface damage may be repairable, while deterioration in posts, beams, joists, connections, or footings can require more extensive work. An inspection should assess the entire deck, including railings and stairs, before deciding whether repair, resurfacing, or replacement is appropriate."
+        },
+        {
+          "q": "Can wood deck boards be replaced with composite decking on the existing frame?",
+          "a": "Yes, if the existing frame is structurally sound and meets the composite manufacturer's installation requirements and applicable code. Joist spacing, support, connections, and the condition of the framing must be checked first. Installing new boards over deteriorated framing leaves the underlying problem unresolved and can shorten the life of the improvement."
+        }
+      ]
+    },
+    {
+      "slug": "bathroom-remodeling",
+      "name": "Bathroom Remodeling",
+      "shortName": "Bathrooms",
+      "icon": "🚿",
+      "image": "/images/services/bathroom-remodeling.jpg",
+      "description": "Bathroom remodeling and shower renovation, from vanity updates to full-shower regrouting.",
+      "heroText": "GOAT remodels bathrooms and renovates showers, from replacing a vanity and tile floor to updating the shower, fixtures, and lighting together. If you like your existing tile but the grout is cracking or the caulk is pulling away, we also quote full-shower regrouting and recaulking as a standalone project. We check for loose or damaged tiles first so the estimate identifies any tile replacement needed before the new grout goes in.",
+      "bullets": [
+        "Full bathroom remodeling and shower renovation",
+        "Shower tile installation and replacement",
+        "Full-shower regrouting and recaulking",
+        "Bathroom tile floor installation",
+        "Vanity, sink, and fixture replacement",
+        "Vanity lighting upgrades during a bathroom remodel"
+      ],
+      "faqs": [
+        {
+          "q": "Can I update my bathroom without moving the toilet, shower, or sink?",
+          "a": "Yes. A bathroom can often be updated with new finishes, a vanity, fixtures, lighting, and storage while keeping the existing layout. Retaining fixture locations generally reduces plumbing relocation and related wall or floor repairs. However, leaks, damaged subfloors, ventilation problems, or outdated systems may still require additional work once the room is assessed."
+        },
+        {
+          "q": "Will replacing grout or caulk fix a leaking shower?",
+          "a": "Only if the leak is actually caused by a problem that the grout or sealant repair addresses. Tile and grout are not a complete waterproofing system. A damaged shower pan, failed waterproofing, drain connection, or plumbing leak requires a different repair. The source should be identified before regrouting or recaulking so a surface repair does not hide continuing damage."
+        }
+      ]
+    },
+    {
+      "slug": "kitchen-remodeling",
+      "name": "Kitchen Remodeling",
+      "shortName": "Kitchens",
+      "icon": "🍳",
+      "image": "/images/services/kitchen-remodeling.jpg",
+      "description": "Kitchen updates with new cabinets, countertops, backsplashes, flooring, and lighting.",
+      "heroText": "GOAT updates kitchens with new cabinets, countertops, backsplashes, flooring, and lighting. If your existing layout works, we can build the renovation around it and focus on the finishes and storage you use every day. For a larger remodel, we plan cabinet dimensions, appliance clearances, sink placement, and lighting before the countertops are measured. The estimate can also include trim and finish carpentry where the new cabinets meet walls, ceilings, and adjoining rooms.",
+      "bullets": [
+        "Kitchen remodeling and layout updates",
+        "Kitchen cabinet installation and replacement",
+        "Countertop, sink, and faucet replacement",
+        "Tile backsplash installation",
+        "Kitchen flooring replacement",
+        "Kitchen lighting upgrades and finish carpentry"
+      ],
+      "faqs": [
+        {
+          "q": "Can I update my kitchen without replacing all the cabinets?",
+          "a": "Yes, when the cabinet boxes are sound and the existing layout works. Depending on their construction and condition, options may include refinishing, replacing doors and hardware, or updating countertops and the backsplash. Cabinets with significant water damage, poor construction, or an unsuitable layout may be better replaced. Evaluate their condition before investing in new finishes."
+        },
+        {
+          "q": "What usually increases the cost of a kitchen remodel?",
+          "a": "Major cost drivers include cabinet selection, countertop material, layout changes, appliance requirements, and the amount of plumbing or electrical work involved. Moving fixtures or removing walls can add work beyond the visible finishes. Keeping a functional layout and sound existing components can help control the scope, while detailed material selections make estimates easier to compare."
+        }
+      ]
+    },
+    {
+      "slug": "siding",
+      "name": "Siding Repair & Installation",
+      "shortName": "Siding",
+      "icon": "🏗️",
+      "image": "/images/services/siding.jpg",
+      "description": "Vinyl, wood, fiber-cement, and aluminum siding repair and replacement on Long Island.",
+      "heroText": "GOAT repairs and replaces vinyl, wood, fiber-cement, and aluminum siding. If damage is concentrated along one wall or around a window, we check the surrounding boards and trim before defining the repair area. For a partial replacement, we compare the profile and color of the existing siding with available materials so you know how closely the repair will match. We also quote full siding replacement when wear extends across several walls.",
+      "bullets": [
+        "Partial and full siding replacement",
+        "Wood siding replacement and rot repair",
+        "Vinyl siding repair and installation",
+        "Fiber-cement siding installation",
+        "Aluminum siding repair and replacement",
+        "Exterior trim replacement around doors and windows"
+      ],
+      "faqs": [
+        {
+          "q": "Can damaged siding be repaired without replacing the entire exterior?",
+          "a": "Yes, when the damage is localized and the surrounding siding and wall assembly are in good condition. The repair depends on the siding material, how it is installed, and whether matching pieces are available. Widespread deterioration, recurring leaks, or damage behind the siding may require a larger replacement area."
+        },
+        {
+          "q": "What should be checked before replacing damaged siding?",
+          "a": "Inspect both the siding and the materials behind it. Visible cracks or missing pieces may be only part of the problem; sheathing, flashing, and the water-resistive barrier also need attention where damage is suspected. The repair should address how water entered and how it will drain afterward, rather than simply covering the affected area with new siding."
+        }
+      ]
+    },
+    {
+      "slug": "insulation",
+      "name": "Insulation Services",
+      "shortName": "Insulation",
+      "icon": "🌡️",
+      "image": "/images/services/insulation.jpg",
+      "description": "Attic insulation removal and installation in attics, walls, crawl spaces, and basements.",
+      "heroText": "GOAT removes old attic insulation and installs new insulation in attics, walls, crawl spaces, and basements. For an attic upgrade, we check the depth and coverage of the existing material and look for gaps in accessible areas before quoting removal or installation. If you're remodeling a room or finishing a basement, we can also plan wall insulation while the cavities are exposed, before drywall closes them up.",
+      "bullets": [
+        "Attic insulation removal and replacement",
+        "New attic insulation installation",
+        "Wall insulation during room renovations",
+        "Crawl space insulation",
+        "Basement insulation",
+        "Fiberglass insulation installation"
+      ],
+      "faqs": [
+        {
+          "q": "Does old attic insulation have to be removed before adding new insulation?",
+          "a": "Not always. Existing insulation can often remain if it is dry, suitable, and free of contamination. Wet, moldy, or pest-contaminated insulation requires assessment and corrective work before adding more. The existing material should also be identified: suspected vermiculite insulation should not be disturbed until evaluated because it may contain asbestos."
+        },
+        {
+          "q": "What is the difference between attic insulation and air sealing?",
+          "a": "Insulation slows heat transfer, while air sealing reduces air movement through gaps and openings. Adding insulation alone may leave significant air leaks unresolved. In a vented attic, sealing appropriate openings at the ceiling level before adding insulation can improve performance. The work must also preserve required ventilation and safe clearances around heat-producing equipment."
+        }
+      ]
+    },
+    {
+      "slug": "plumbing-electrical",
+      "name": "Light Plumbing & Electrical",
+      "shortName": "Plumbing/Elec",
+      "icon": "🔧",
+      "image": "/images/services/plumbing.jpg",
+      "description": "Plumbing and lighting upgrades in kitchen, bathroom, and multi-room renovations.",
+      "heroText": "GOAT includes plumbing and lighting upgrades in kitchen, bathroom, and multi-room renovations. A bathroom project can combine vanity, sink, faucet, and vanity-light replacement across one or more rooms. In a kitchen, we can plan the sink and faucet around the new countertops and include lighting updates in the same estimate. Share your fixture list and room layout so we can coordinate the work with the cabinetry, ceilings, tile, and painting.",
+      "bullets": [
+        "Kitchen sink and faucet replacement with countertop upgrades",
+        "Vanity, sink, and faucet replacement across multiple bathrooms",
+        "Bathroom fixture and vanity lighting upgrades",
+        "Kitchen and multi-room light fixture replacement",
+        "Basement lighting upgrades alongside ceiling finishing",
+        "Outlet and switch replacement during room renovations"
+      ],
+      "faqs": [
+        {
+          "q": "Does a dripping faucet need to be replaced, or can it be repaired?",
+          "a": "A dripping faucet can often be repaired by replacing a worn cartridge, washer, or seal, depending on its design. Replacement may make more sense when the faucet body is damaged, corrosion is extensive, or compatible parts are unavailable. Identifying where the leak originates helps determine whether the problem is in the faucet or its connections."
+        },
+        {
+          "q": "Can a new light fixture use the existing wiring and electrical box?",
+          "a": "Sometimes, but the existing wiring, grounding, box condition, and support must be suitable for the new fixture. A heavier fixture or ceiling fan may require a different support arrangement. Damaged wiring or compatibility problems can expand the scope. A qualified electrician should evaluate the installation and handle work requiring electrical licensing or permits."
+        }
+      ]
+    }
+  ],
+  "serviceAreas": [
+    {"slug": "garden-city-ny", "name": "Garden City", "county": "Nassau"},
+    {"slug": "westbury-ny", "name": "Westbury", "county": "Nassau"},
+    {"slug": "roslyn-ny", "name": "Roslyn", "county": "Nassau"},
+    {"slug": "mineola-ny", "name": "Mineola", "county": "Nassau"},
+    {"slug": "sands-point-ny", "name": "Sands Point", "county": "Nassau"},
+    {"slug": "plandome-ny", "name": "Plandome", "county": "Nassau"},
+    {"slug": "old-westbury-ny", "name": "Old Westbury", "county": "Nassau"},
+    {"slug": "brookville-ny", "name": "Brookville", "county": "Nassau"},
+    {"slug": "old-brookville-ny", "name": "Old Brookville", "county": "Nassau"},
+    {"slug": "plandome-manor-ny", "name": "Plandome Manor", "county": "Nassau"},
+    {"slug": "manhasset-ny", "name": "Manhasset", "county": "Nassau"},
+    {"slug": "lake-success-ny", "name": "Lake Success", "county": "Nassau"},
+    {"slug": "east-hills-ny", "name": "East Hills", "county": "Nassau"},
+    {"slug": "kings-point-ny", "name": "Kings Point", "county": "Nassau"},
+    {"slug": "flower-hill-ny", "name": "Flower Hill", "county": "Nassau"},
+    {"slug": "jericho-ny", "name": "Jericho", "county": "Nassau"},
+    {"slug": "syosset-ny", "name": "Syosset", "county": "Nassau"},
+    {"slug": "port-washington-ny", "name": "Port Washington", "county": "Nassau"},
+    {"slug": "plainview-ny", "name": "Plainview", "county": "Nassau"},
+    {"slug": "rockville-centre-ny", "name": "Rockville Centre", "county": "Nassau"},
+    {"slug": "merrick-ny", "name": "Merrick", "county": "Nassau"},
+    {"slug": "wantagh-ny", "name": "Wantagh", "county": "Nassau"},
+    {"slug": "east-meadow-ny", "name": "East Meadow", "county": "Nassau"},
+    {"slug": "levittown-ny", "name": "Levittown", "county": "Nassau"},
+    {"slug": "lynbrook-ny", "name": "Lynbrook", "county": "Nassau"}
+  ],
+  "reviews": [
+    {
+      "text": "GOAT Handyman completely transformed our kitchen. The attention to detail was incredible - they respected our home, communicated every step of the way, and the finished product looks amazing.",
+      "name": "Maria S.",
+      "location": "Garden City, NY",
+      "rating": 5
+    },
+    {
+      "text": "We had water damage in our bathroom and needed a full remodel. GOAT handled everything from demolition to the final tile work. Professional, on time, and excellent quality.",
+      "name": "Robert K.",
+      "location": "Manhasset, NY",
+      "rating": 5
+    },
+    {
+      "text": "Called for a simple deck repair and was impressed by their professionalism. They ended up refinishing the whole deck and it looks brand new. Fair pricing and great work.",
+      "name": "Jennifer L.",
+      "location": "Roslyn, NY",
+      "rating": 5
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What affects the cost of a home repair or remodeling project on Long Island?",
+      "a": "The cost depends on the amount of work, material choices, existing conditions, access, and the preparation needed before installation or finishing. Demolition, disposal, hidden damage, and specialist work can also affect the total. A useful estimate should describe what is included rather than relying only on a room size, photo, or advertised starting price."
+    },
+    {
+      "q": "What should a written home improvement estimate include?",
+      "a": "A written estimate should identify the work, materials or allowances, price, and expected schedule. It should also clarify preparation, disposal, finishing, and exclusions so both parties understand the scope. Before work begins, the contract should explain payment terms and how additional work will be approved. Clear details help prevent disagreements about what the price covers."
+    },
+    {
+      "q": "Why can two contractors give very different prices for the same project?",
+      "a": "Contractors may be pricing different work even when the project description sounds similar. One estimate may include demolition, surface preparation, materials, painting, and cleanup, while another leaves some of those items out. Compare the written scope, product specifications, exclusions, and warranty terms before comparing totals. Ask for clarification when a price difference is substantial."
+    },
+    {
+      "q": "Should I buy materials before getting an estimate?",
+      "a": "Usually, it is better to confirm the project scope, measurements, and product requirements first. A door, vanity, fixture, or flooring product may look suitable but require additional modifications to fit. If you want to supply materials, agree on compatibility, quantities, delivery timing, and responsibility for returns or missing parts before placing the order."
+    },
+    {
+      "q": "Can I stay in my home during a remodeling project?",
+      "a": "Often, yes, when the work area can be separated and essential facilities remain available. The decision depends on dust, noise, access, utility interruptions, and whether a kitchen or bathroom will be usable. Discuss the work sequence and temporary arrangements before construction starts, especially if the project affects your only bathroom or a primary entry."
+    },
+    {
+      "q": "What happens if hidden damage is found during a repair or remodel?",
+      "a": "Hidden damage may require changes to the original scope once materials are opened or removed. The affected work should be assessed, documented, and explained before proceeding. Any additional cost or schedule change should be agreed to in writing, except for immediate steps needed to make the area safe. Avoid covering unresolved damage simply to stay within the original plan."
+    }
+  ]
+}
