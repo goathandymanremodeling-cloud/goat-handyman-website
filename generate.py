@@ -285,7 +285,6 @@ def footer():
 <script src="{BASE}/js/main.js" defer></script>"""
 
 def head(title, desc, canonical, schema="", extra_head=""):
-    font_url = B.get('fontUrl', 'https://fonts.googleapis.com/css2?family=' + FONT.replace(' ', '+') + ':wght@400;500;600;700;800&display=optional')
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -306,13 +305,10 @@ def head(title, desc, canonical, schema="", extra_head=""):
   <link rel="apple-touch-icon" href="{BASE}/images/logo.png" />
   <link rel="sitemap" type="application/xml" href="{BASE}/sitemap.xml" />
   {schema}
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2" crossorigin />
-  <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2" crossorigin />
-  <link rel="preload" as="style" href="{font_url}" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="{font_url}" /></noscript>
-  <style>{CRITICAL_CSS}</style>
+  <link rel="preload" as="font" type="font/woff2" href="{BASE}/fonts/inter-latin.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="{BASE}/fonts/outfit-latin.woff2" crossorigin />
+  <style>{FONTS_FACE}
+{CRITICAL_CSS}</style>
   <link rel="preload" as="style" href="{BASE}/css/main.css?v=4" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" as="style" href="{BASE}/css/theme.css?v=2" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" as="style" href="{BASE}/css/builders-design.css?v=2" onload="this.onload=null;this.rel='stylesheet'" />
@@ -384,6 +380,8 @@ GA4_TAG = """<script async src="https://www.googletagmanager.com/gtm.js?id=G-VNE
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 </script>"""
+FONTS_FACE = """@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:optional;src:url(/fonts/inter-latin.woff2) format('woff2');}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:100 900;font-display:optional;src:url(/fonts/outfit-latin.woff2) format('woff2');}"""
 _AVATAR_COLORS = ["#1565C0", "#c62828", "#2e7d32", "#5e35b1", "#007c91", "#bf360c", "#3949ab", "#00695c"]  # all >= 4.5:1 with white initials (WCAG AA)
 _MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
@@ -1481,9 +1479,9 @@ def make_thank_you():
   <meta name="robots" content="noindex" />
   <link rel="icon" href="/images/logo.png" type="image/png" />
   <link rel="apple-touch-icon" href="/images/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="{B.get('fontUrl', 'https://fonts.googleapis.com/css2?family=' + FONT.replace(' ', '+') + ':wght@400;500;600;700;800&display=optional')}" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/outfit-latin.woff2" crossorigin />
+  <style>{FONTS_FACE}</style>
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/theme.css" />
   <link rel="stylesheet" href="{BASE}/css/builders-design.css" />
