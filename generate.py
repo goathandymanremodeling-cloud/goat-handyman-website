@@ -168,7 +168,7 @@ def nav(active=""):
   <nav class="main-nav" aria-label="Main navigation">
     <div class="container nav-inner">
       <a href="{BASE}/" class="nav-logo">
-        <img src="{BASE}/images/logo.png" alt="{NAME} logo" height="96" />
+        <img src="{BASE}/images/logo.png" alt="{NAME} logo" width="83" height="96" />
       </a>
       <ul class="nav-links">
         <li class="has-dropdown">
@@ -196,7 +196,7 @@ def nav(active=""):
 </header>
 <div class="mobile-menu" id="mobile-menu">
   <div class="mobile-menu-header">
-    <img src="{BASE}/images/logo.png" alt="{NAME}" height="40" />
+    <img src="{BASE}/images/logo.png" alt="{NAME}" width="35" height="40" />
     <button id="mobile-close" aria-label="Close">✕</button>
   </div>
   <a href="{BASE}/request-service.html" class="btn btn-primary mobile-cta">Get Free Estimate</a>
@@ -244,7 +244,7 @@ def footer():
   <div class="footer-main">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="{BASE}/"><img src="{BASE}/images/logo.png" alt="{NAME}" height="72" class="footer-logo" /></a>
+        <a href="{BASE}/"><img src="{BASE}/images/logo.png" alt="{NAME}" width="62" height="72" class="footer-logo" /></a>
         <p>{B.get('footerTagline', f"{NAME} - locally based in {B['city']}, NY.")}</p>
         <a href="tel:{PHONE_RAW}" class="footer-phone">{PHONE}</a>
         <p class="footer-address">{ADDRESS}</p>
@@ -276,14 +276,16 @@ def footer():
   </div>
 </footer>
 <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
-<script src="{BASE}/js/main.js"></script>"""
+<script src="{BASE}/js/main.js" defer></script>"""
 
-def head(title, desc, canonical, schema=""):
+def head(title, desc, canonical, schema="", extra_head=""):
+    font_url = B.get('fontUrl', 'https://fonts.googleapis.com/css2?family=' + FONT.replace(' ', '+') + ':wght@400;500;600;700;800&display=swap')
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {extra_head}
   <title>{title}</title>
   <meta name="description" content="{desc}" />
   <link rel="canonical" href="https://{B['domain']}{canonical}" />
@@ -299,7 +301,8 @@ def head(title, desc, canonical, schema=""):
   {schema}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="{B.get('fontUrl', 'https://fonts.googleapis.com/css2?family=' + FONT.replace(' ', '+') + ':wght@400;500;600;700;800&display=swap')}" rel="stylesheet" />
+  <link rel="preload" as="style" href="{font_url}" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="{font_url}" /></noscript>
   <link rel="stylesheet" href="{BASE}/css/main.css?v=2" />
   <link rel="stylesheet" href="{BASE}/css/theme.css?v=2" />
   <link rel="stylesheet" href="{BASE}/css/builders-design.css?v=2" />
@@ -548,7 +551,8 @@ def make_homepage():
     # Prepend BASE to slide paths that start with /
     slides = [BASE + s if s.startswith("/") and not s.startswith(BASE) else s for s in slides]
     slide_divs = "\n    ".join(
-        f'<div class="hero-slide{" active" if i == 0 else ""}" style="background-image:url(\'{s}\')"></div>'
+        (f'<div class="hero-slide active" style="background-image:url(\'{s}\')"></div>' if i == 0 else
+         f'<div class="hero-slide" data-bg="{s}"></div>')
         for i, s in enumerate(slides)
     )
     dot_buttons = "\n    ".join(
@@ -578,7 +582,8 @@ def make_homepage():
         f"{B['industry']} in {B.get('homeArea', B['city'])}, NY | {NAME} | {PHONE}",
         f"{NAME} provides professional {B['industryLower']} in {B.get('homeArea', B['city'])}, NY. Call {PHONE} for a free estimate!",
         "/",
-        LOCAL_BIZ_SCHEMA
+        LOCAL_BIZ_SCHEMA,
+        f'<link rel="preload" as="image" href="{slides[0]}" fetchpriority="high" />'
     )}
 {nav()}
 
@@ -613,10 +618,14 @@ def make_homepage():
   var slides = document.querySelectorAll('#hero-carousel .hero-slide');
   var dots   = document.querySelectorAll('#hero-carousel .hero-dot');
   var cur = 0, timer;
+  function loadBg(el) {{
+    if (el && el.dataset.bg && !el.style.backgroundImage) {{ el.style.backgroundImage = "url('" + el.dataset.bg + "')"; }}
+  }}
   function goTo(n) {{
     slides[cur].classList.remove('active');
     dots[cur].classList.remove('active');
     cur = (n + slides.length) % slides.length;
+    loadBg(slides[cur]);
     slides[cur].classList.add('active');
     dots[cur].classList.add('active');
   }}
@@ -630,6 +639,7 @@ def make_homepage():
   hero.addEventListener('mouseenter', stop);
   hero.addEventListener('mouseleave', start);
   start();
+  window.addEventListener('load', function() {{ slides.forEach(loadBg); }});
 }})();
 </script>
 
@@ -1449,7 +1459,7 @@ def make_thank_you():
 <body>
 <header class="site-header">
   <nav class="main-nav"><div class="container nav-inner">
-    <a href="{BASE}/" class="nav-logo"><img src="{BASE}/images/logo.png" alt="{NAME}" height="48" /></a>
+    <a href="{BASE}/" class="nav-logo"><img src="{BASE}/images/logo.png" alt="{NAME}" width="42" height="48" /></a>
     <a href="tel:{PHONE_RAW}" class="nav-phone">{PHONE}</a>
   </div></nav>
 </header>
