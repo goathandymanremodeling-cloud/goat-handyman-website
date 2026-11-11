@@ -584,8 +584,8 @@ def make_homepage():
     # Prepend BASE to slide paths that start with /
     slides = [BASE + s if s.startswith("/") and not s.startswith(BASE) else s for s in slides]
     slide_divs = "\n    ".join(
-        (f'<div class="hero-slide active" style="background-image:url(\'{s}\')"></div>' if i == 0 else
-         f'<div class="hero-slide" data-bg="{s}"></div>')
+        (f'<div class="hero-slide active"><img src="{s}" alt="" fetchpriority="high" /></div>' if i == 0 else
+         f'<div class="hero-slide"><img data-src="{s}" alt="" /></div>')
         for i, s in enumerate(slides)
     )
     dot_buttons = "\n    ".join(
@@ -652,7 +652,7 @@ def make_homepage():
   var dots   = document.querySelectorAll('#hero-carousel .hero-dot');
   var cur = 0, timer;
   function loadBg(el) {{
-    if (el && el.dataset.bg && !el.style.backgroundImage) {{ el.style.backgroundImage = "url('" + el.dataset.bg + "')"; }}
+    if (el) {{ var img = el.querySelector('img'); if (img && img.dataset.src && !img.getAttribute('src')) {{ img.src = img.dataset.src; }} }}
   }}
   function goTo(n) {{
     slides[cur].classList.remove('active');
