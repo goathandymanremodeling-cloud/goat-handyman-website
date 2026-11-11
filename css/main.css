@@ -400,10 +400,12 @@ nav.breadcrumbs {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
 }
 .hero-slide.active {
   opacity: 1;
+}
+.hero-slides.animated .hero-slide {
+  transition: opacity 1s ease-in-out;
 }
 .hero-bg {
   position: absolute;
@@ -436,8 +438,10 @@ nav.breadcrumbs {
   z-index: 3;
 }
 .hero-dot {
-  width: 10px;
-  height: 10px;
+  width: 24px;
+  height: 24px;
+  padding: 7px;
+  background-clip: content-box;
   border-radius: 50%;
   background: rgba(255,255,255,0.4);
   border: none;
@@ -1640,7 +1644,7 @@ nav.breadcrumbs {
   transition: background .2s;
 }
 .contact-card:hover { background: rgba(255,255,255,.14); }
-.contact-card h3 {
+.contact-card h2 {
   color: #fff;
   font-size: 1rem;
   text-transform: uppercase;
@@ -1670,7 +1674,7 @@ nav.breadcrumbs {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .15em;
-  color: var(--green-light);
+  color: var(--accent);
   margin-bottom: 10px;
 }
 .difference-grid {
@@ -1767,7 +1771,7 @@ nav.breadcrumbs {
   transition: all .15s;
 }
 .footer-social a:hover { background: var(--green-light); color: #fff; }
-.footer-col h4 {
+.footer-col h3 {
   color: #fff;
   font-size: 0.82rem;
   font-weight: 700;
@@ -1788,11 +1792,11 @@ nav.breadcrumbs {
   gap: 12px;
   flex-wrap: wrap;
   font-size: 0.8rem;
-  color: rgba(255,255,255,.4);
+  color: rgba(255,255,255,.75);
 }
 .footer-legal { display: flex; gap: 20px; }
-.footer-legal a { color: rgba(255,255,255,.4); }
-.footer-legal a:hover { color: rgba(255,255,255,.7); }
+.footer-legal a { color: rgba(255,255,255,.75); }
+.footer-legal a:hover { color: rgba(255,255,255,.9); }
 
 /* ── Map ─────────────────────────────────────────────────── */
 .map-embed { border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-md); line-height: 0; }
