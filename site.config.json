@@ -516,6 +516,61 @@
       "slug": "lynbrook-ny",
       "name": "Lynbrook",
       "county": "Nassau"
+    },
+    {
+      "slug": "bay-shore-ny",
+      "name": "Bay Shore",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "brightwaters-ny",
+      "name": "Brightwaters",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "melville-ny",
+      "name": "Melville",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "east-farmingdale-ny",
+      "name": "East Farmingdale",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "medford-ny",
+      "name": "Medford",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "west-islip-ny",
+      "name": "West Islip",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "smithtown-ny",
+      "name": "Smithtown",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "east-northport-ny",
+      "name": "East Northport",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "deer-park-ny",
+      "name": "Deer Park",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "north-babylon-ny",
+      "name": "North Babylon",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "commack-ny",
+      "name": "Commack",
+      "county": "Suffolk"
     }
   ],
   "reviews": [
