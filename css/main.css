@@ -915,6 +915,7 @@ nav.breadcrumbs {
   align-items: center;
   gap: 0;
 }
+.review-stars svg { fill: currentColor; stroke: currentColor; }
 .review-text {
   font-size: 0.925rem;
   color: var(--gray-dark);
