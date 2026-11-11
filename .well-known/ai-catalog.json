@@ -1,0 +1,30 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "GOAT Handyman & Remodeling",
+    "identifier": "did:web:goathandymanremodeling.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:ai:goathandymanremodeling.com:docs:llms-txt",
+      "displayName": "GOAT Handyman & Remodeling llms.txt",
+      "type": "text/markdown",
+      "url": "https://www.goathandymanremodeling.com/llms.txt",
+      "description": "A curated, machine-readable guide to the GOAT Handyman & Remodeling website: services, service areas, and key pages for AI agents.",
+      "representativeQueries": [
+        "find a handyman in Garden City NY",
+        "get a quote for bathroom remodeling on Long Island",
+        "what handyman services are available in Nassau County NY"
+      ],
+      "tags": ["handyman", "remodeling", "long-island", "llms-txt"]
+    },
+    {
+      "identifier": "urn:ai:goathandymanremodeling.com:docs:sitemap",
+      "displayName": "GOAT Handyman & Remodeling sitemap",
+      "type": "application/xml",
+      "url": "https://www.goathandymanremodeling.com/sitemap.xml",
+      "description": "The full list of indexable pages on the GOAT Handyman & Remodeling website.",
+      "tags": ["sitemap"]
+    }
+  ]
+}
