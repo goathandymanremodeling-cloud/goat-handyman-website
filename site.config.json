@@ -523,6 +523,11 @@
       "county": "Nassau"
     },
     {
+      "slug": "muttontown-ny",
+      "name": "Muttontown",
+      "county": "Nassau"
+    },
+    {
       "slug": "bay-shore-ny",
       "name": "Bay Shore",
       "county": "Suffolk"
@@ -580,6 +585,41 @@
     {
       "slug": "manorville-ny",
       "name": "Manorville",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "holbrook-ny",
+      "name": "Holbrook",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "ronkonkoma-ny",
+      "name": "Ronkonkoma",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "bayport-ny",
+      "name": "Bayport",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "islandia-ny",
+      "name": "Islandia",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "hauppauge-ny",
+      "name": "Hauppauge",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "lloyd-harbor-ny",
+      "name": "Lloyd Harbor",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "cold-spring-harbor-ny",
+      "name": "Cold Spring Harbor",
       "county": "Suffolk"
     }
   ],
