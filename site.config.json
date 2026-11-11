@@ -621,6 +621,11 @@
       "slug": "cold-spring-harbor-ny",
       "name": "Cold Spring Harbor",
       "county": "Suffolk"
+    },
+    {
+      "slug": "dix-hills-ny",
+      "name": "Dix Hills",
+      "county": "Suffolk"
     }
   ],
   "reviews": [
