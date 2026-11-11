@@ -11,8 +11,8 @@
     "zip": "11550",
     "hours": "Sun-Fri 8am-6pm (Sat Closed)",
     "domain": "www.goathandymanremodeling.com",
-    "baseUrl": "/goat-preview",
-    "zapierWebhook": "",
+    "baseUrl": "",
+    "zapierWebhook": "https://formsubmit.co/goathandymanremodeling@gmail.com",
     "font": "Outfit",
     "fontBody": "Inter",
     "fontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap",
@@ -391,31 +391,131 @@
     }
   ],
   "serviceAreas": [
-    {"slug": "garden-city-ny", "name": "Garden City", "county": "Nassau"},
-    {"slug": "westbury-ny", "name": "Westbury", "county": "Nassau"},
-    {"slug": "roslyn-ny", "name": "Roslyn", "county": "Nassau"},
-    {"slug": "mineola-ny", "name": "Mineola", "county": "Nassau"},
-    {"slug": "sands-point-ny", "name": "Sands Point", "county": "Nassau"},
-    {"slug": "plandome-ny", "name": "Plandome", "county": "Nassau"},
-    {"slug": "old-westbury-ny", "name": "Old Westbury", "county": "Nassau"},
-    {"slug": "brookville-ny", "name": "Brookville", "county": "Nassau"},
-    {"slug": "old-brookville-ny", "name": "Old Brookville", "county": "Nassau"},
-    {"slug": "plandome-manor-ny", "name": "Plandome Manor", "county": "Nassau"},
-    {"slug": "manhasset-ny", "name": "Manhasset", "county": "Nassau"},
-    {"slug": "lake-success-ny", "name": "Lake Success", "county": "Nassau"},
-    {"slug": "east-hills-ny", "name": "East Hills", "county": "Nassau"},
-    {"slug": "kings-point-ny", "name": "Kings Point", "county": "Nassau"},
-    {"slug": "flower-hill-ny", "name": "Flower Hill", "county": "Nassau"},
-    {"slug": "jericho-ny", "name": "Jericho", "county": "Nassau"},
-    {"slug": "syosset-ny", "name": "Syosset", "county": "Nassau"},
-    {"slug": "port-washington-ny", "name": "Port Washington", "county": "Nassau"},
-    {"slug": "plainview-ny", "name": "Plainview", "county": "Nassau"},
-    {"slug": "rockville-centre-ny", "name": "Rockville Centre", "county": "Nassau"},
-    {"slug": "merrick-ny", "name": "Merrick", "county": "Nassau"},
-    {"slug": "wantagh-ny", "name": "Wantagh", "county": "Nassau"},
-    {"slug": "east-meadow-ny", "name": "East Meadow", "county": "Nassau"},
-    {"slug": "levittown-ny", "name": "Levittown", "county": "Nassau"},
-    {"slug": "lynbrook-ny", "name": "Lynbrook", "county": "Nassau"}
+    {
+      "slug": "garden-city-ny",
+      "name": "Garden City",
+      "county": "Nassau"
+    },
+    {
+      "slug": "westbury-ny",
+      "name": "Westbury",
+      "county": "Nassau"
+    },
+    {
+      "slug": "roslyn-ny",
+      "name": "Roslyn",
+      "county": "Nassau"
+    },
+    {
+      "slug": "mineola-ny",
+      "name": "Mineola",
+      "county": "Nassau"
+    },
+    {
+      "slug": "sands-point-ny",
+      "name": "Sands Point",
+      "county": "Nassau"
+    },
+    {
+      "slug": "plandome-ny",
+      "name": "Plandome",
+      "county": "Nassau"
+    },
+    {
+      "slug": "old-westbury-ny",
+      "name": "Old Westbury",
+      "county": "Nassau"
+    },
+    {
+      "slug": "brookville-ny",
+      "name": "Brookville",
+      "county": "Nassau"
+    },
+    {
+      "slug": "old-brookville-ny",
+      "name": "Old Brookville",
+      "county": "Nassau"
+    },
+    {
+      "slug": "plandome-manor-ny",
+      "name": "Plandome Manor",
+      "county": "Nassau"
+    },
+    {
+      "slug": "manhasset-ny",
+      "name": "Manhasset",
+      "county": "Nassau"
+    },
+    {
+      "slug": "lake-success-ny",
+      "name": "Lake Success",
+      "county": "Nassau"
+    },
+    {
+      "slug": "east-hills-ny",
+      "name": "East Hills",
+      "county": "Nassau"
+    },
+    {
+      "slug": "kings-point-ny",
+      "name": "Kings Point",
+      "county": "Nassau"
+    },
+    {
+      "slug": "flower-hill-ny",
+      "name": "Flower Hill",
+      "county": "Nassau"
+    },
+    {
+      "slug": "jericho-ny",
+      "name": "Jericho",
+      "county": "Nassau"
+    },
+    {
+      "slug": "syosset-ny",
+      "name": "Syosset",
+      "county": "Nassau"
+    },
+    {
+      "slug": "port-washington-ny",
+      "name": "Port Washington",
+      "county": "Nassau"
+    },
+    {
+      "slug": "plainview-ny",
+      "name": "Plainview",
+      "county": "Nassau"
+    },
+    {
+      "slug": "rockville-centre-ny",
+      "name": "Rockville Centre",
+      "county": "Nassau"
+    },
+    {
+      "slug": "merrick-ny",
+      "name": "Merrick",
+      "county": "Nassau"
+    },
+    {
+      "slug": "wantagh-ny",
+      "name": "Wantagh",
+      "county": "Nassau"
+    },
+    {
+      "slug": "east-meadow-ny",
+      "name": "East Meadow",
+      "county": "Nassau"
+    },
+    {
+      "slug": "levittown-ny",
+      "name": "Levittown",
+      "county": "Nassau"
+    },
+    {
+      "slug": "lynbrook-ny",
+      "name": "Lynbrook",
+      "county": "Nassau"
+    }
   ],
   "reviews": [
     {

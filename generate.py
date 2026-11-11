@@ -325,8 +325,9 @@ def booking_form(compact=False):
       <select name="service"><option value="">Select a service...</option>{service_opts}</select>
     </div>
     <div class="form-group"><label>Details</label><textarea name="message" rows="3" placeholder="Tell us about your project..."></textarea></div>
-    <input type="text" name="_gotcha" style="display:none" />
-    <input type="hidden" name="_next" value="/thank-you.html" />
+    <input type="text" name="_honey" style="display:none" />
+    <input type="hidden" name="_next" value="https://www.goathandymanremodeling.com/thank-you.html" />
+    <input type="hidden" name="_captcha" value="false" />
     <button type="submit" class="btn btn-primary btn-block">Send Request →</button>
   </form>
 </div>"""
@@ -350,9 +351,10 @@ def booking_form(compact=False):
       <select name="service" required><option value="">Select a service...</option>{service_opts}<option value="other">Other / Not Sure</option></select>
     </div>
     <div class="form-group"><label>Project Details</label><textarea name="message" rows="4" placeholder="Describe your project, property size, timeline..."></textarea></div>
-    <input type="text" name="_gotcha" style="display:none" />
+    <input type="text" name="_honey" style="display:none" />
     <input type="hidden" name="_subject" value="New Estimate Request - {NAME}" />
-    <input type="hidden" name="_next" value="/thank-you.html" />
+    <input type="hidden" name="_next" value="https://www.goathandymanremodeling.com/thank-you.html" />
+    <input type="hidden" name="_captcha" value="false" />
     <button type="submit" class="btn btn-primary btn-block">Send My Request →</button>
     <p class="form-disclaimer">We respect your privacy. No spam, ever.</p>
   </form>
