@@ -303,7 +303,7 @@ def head(title, desc, canonical, schema="", extra_head=""):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="{font_url}" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="{font_url}" /></noscript>
-  <link rel="stylesheet" href="{BASE}/css/main.css?v=2" />
+  <link rel="stylesheet" href="{BASE}/css/main.css?v=3" />
   <link rel="stylesheet" href="{BASE}/css/theme.css?v=2" />
   <link rel="stylesheet" href="{BASE}/css/builders-design.css?v=2" />
 </head>
@@ -363,25 +363,43 @@ def booking_form(compact=False):
   </form>
 </div>"""
 
+# Google "G" logo (multicolour) + the business's Google profile link, used to
+# make the on-site reviews read as real Google reviews.
+GOOGLE_G = """<svg class="google-g" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg>"""
+GOOGLE_REVIEWS_URL = "https://share.google/N2PxdQLDACAWKNpIu"
+_AVATAR_COLORS = ["#4285F4", "#EA4335", "#34A853", "#7C4DFF", "#00ACC1", "#F4511E", "#5C6BC0", "#00897B"]
+_MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+def _avatar_color(name):
+    return _AVATAR_COLORS[sum(name.encode()) % len(_AVATAR_COLORS)]
+
+def _review_month(iso_date):
+    y, m, _d = iso_date.split("-")
+    return f"{_MONTHS[int(m) - 1]} {y}"
+
 def review_cards(city=None):
-    """Generate review cards. Always uses the reviewer's actual location for consistency."""
+    """Generate review cards styled like real Google reviews: coloured initial
+    avatar, reviewer name + review month, stars, text, and a 'Posted on
+    Google' footer with the Google logo."""
     cards = []
     for r in REVIEWS:
-        loc = r["location"]  # Always use actual reviewer location, not page city
         stars = ICON["star"] * r["rating"]
         parts = r["name"].split()
         initials = (parts[0][0] + parts[-1][0]).upper() if len(parts) > 1 else parts[0][:2].upper()
+        color = _avatar_color(r["name"])
+        when = _review_month(r.get("date", "2025-01-01"))
         cards.append(f"""
-    <div class="review-card">
-      <div class="review-stars">{stars}</div>
-      <p class="review-text">"{r['text']}"</p>
-      <div class="review-footer">
-        <div class="review-avatar">{initials}</div>
-        <div>
+    <div class="review-card google-review">
+      <div class="review-header">
+        <div class="review-avatar" style="background:{color}">{initials}</div>
+        <div class="review-header-text">
           <div class="review-author">{r['name']}</div>
-          <div class="review-location">{loc}</div>
+          <div class="review-date">{when}</div>
         </div>
       </div>
+      <div class="review-stars">{stars}</div>
+      <p class="review-text">"{r['text']}"</p>
+      <div class="review-source">Posted on {GOOGLE_G} <span>Google</span></div>
     </div>""")
     return "\n".join(cards)
 
@@ -796,6 +814,7 @@ def make_homepage():
     <div class="section-header">
       <span class="eyebrow">Client Reviews</span>
       <h2>What Long Island Homeowners Say</h2>
+      <div class="google-badge">{GOOGLE_G} <strong>5.0</strong> <span class="review-stars">{ICON["star"] * 5}</span> · Based on <a href="{GOOGLE_REVIEWS_URL}" target="_blank" rel="noopener">32 Google reviews</a></div>
     </div>
     <div class="review-grid">
       {review_cards()}
@@ -1345,13 +1364,7 @@ def make_faq():
 # ─────────────────────────────────────────────────────────
 
 def make_reviews():
-    all_reviews = "\n".join(f"""
-    <div class="review-card">
-      <div class="review-stars">{ICON["star"] * r['rating']}</div>
-      <p class="review-text">"{r['text']}"</p>
-      <div class="review-author">{r['name']}</div>
-      <div class="review-location">{r['location']}</div>
-    </div>""" for r in REVIEWS)
+    all_reviews = review_cards()
 
     bc, bc_schema = breadcrumbs([("Home", "/"), ("Reviews", None)])
     content = f"""{head(
@@ -1366,6 +1379,7 @@ def make_reviews():
   <div class="container">
     <h1>Customer Reviews</h1>
     <p>See what Long Island homeowners and businesses say about {NAME}.</p>
+    <div class="google-badge">{GOOGLE_G} <strong>5.0</strong> <span class="review-stars">{ICON["star"] * 5}</span> · Based on <a href="{GOOGLE_REVIEWS_URL}" target="_blank" rel="noopener">32 Google reviews</a></div>
   </div>
 </section>
 <section class="section">
