@@ -1,30 +1,42 @@
 {
-  "specVersion": "1.0",
-  "host": {
-    "displayName": "GOAT Handyman & Remodeling",
-    "identifier": "did:web:goathandymanremodeling.com"
-  },
   "entries": [
     {
-      "identifier": "urn:ai:goathandymanremodeling.com:docs:llms-txt",
-      "displayName": "GOAT Handyman & Remodeling llms.txt",
-      "type": "text/markdown",
-      "url": "https://www.goathandymanremodeling.com/llms.txt",
       "description": "A curated, machine-readable guide to the GOAT Handyman & Remodeling website: services, service areas, and key pages for AI agents.",
+      "displayName": "GOAT Handyman & Remodeling llms.txt",
+      "identifier": "urn:air:goathandymanremodeling.com:docs:llms-txt",
       "representativeQueries": [
         "find a handyman in Garden City NY",
         "get a quote for bathroom remodeling on Long Island",
         "what handyman services are available in Nassau County NY"
       ],
-      "tags": ["handyman", "remodeling", "long-island", "llms-txt"]
+      "tags": [
+        "handyman",
+        "remodeling",
+        "long-island",
+        "llms-txt"
+      ],
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://www.goathandymanremodeling.com/llms.txt"
     },
     {
-      "identifier": "urn:ai:goathandymanremodeling.com:docs:sitemap",
-      "displayName": "GOAT Handyman & Remodeling sitemap",
-      "type": "application/xml",
-      "url": "https://www.goathandymanremodeling.com/sitemap.xml",
       "description": "The full list of indexable pages on the GOAT Handyman & Remodeling website.",
-      "tags": ["sitemap"]
+      "displayName": "GOAT Handyman & Remodeling sitemap",
+      "identifier": "urn:air:goathandymanremodeling.com:docs:sitemap",
+      "representativeQueries": [
+        "list all pages on the GOAT Handyman & Remodeling website",
+        "find the service page for drywall repair on Long Island",
+        "find the service area page for Garden City NY"
+      ],
+      "tags": [
+        "sitemap"
+      ],
+      "type": "application/xml",
+      "url": "https://www.goathandymanremodeling.com/sitemap.xml"
     }
-  ]
+  ],
+  "host": {
+    "displayName": "GOAT Handyman & Remodeling",
+    "identifier": "did:web:goathandymanremodeling.com"
+  },
+  "specVersion": "1.0"
 }
