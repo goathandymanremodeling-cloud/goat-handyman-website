@@ -44,7 +44,7 @@
       "name": "Handyman Services",
       "shortName": "Handyman",
       "icon": "🔧",
-      "image": "/images/services/handyman.jpg",
+      "image": "/images/services/handyman.webp",
       "description": "Professional handyman services for Nassau and Suffolk homeowners tackling multi-room repair projects.",
       "heroText": "GOAT Handyman & Remodeling helps homeowners in Nassau and Suffolk counties tackle repair projects that span several rooms. A single estimate can cover interior door replacement, stair and railing repairs, new trim, drywall finishing, and painting. If you're updating a home before moving in or working through a growing repair list, send us the full scope. We can plan the work in sequence so the doors and trim are in place before the final coat of paint.",
       "bullets": [
@@ -70,7 +70,7 @@
       "name": "Home Repair Services",
       "shortName": "Home Repair",
       "icon": "🏠",
-      "image": "/images/services/home-repair.jpg",
+      "image": "/images/services/home-repair.webp",
       "description": "Professional home repair services for damage affecting walls, flooring, and woodwork under one estimate.",
       "heroText": "When damage affects several parts of a room, we can repair the walls, flooring, and woodwork under one estimate. In a finished basement in Roslyn, for example, GOAT repaired drywall, replaced flooring and baseboards, and repainted after water damage. Once the source of a leak is fixed and the space is dry, we assess which materials can stay and which need replacement. We also handle exterior tile removal and replacement where damage extends across an outdoor surface.",
       "bullets": [
@@ -97,7 +97,7 @@
       "name": "Drywall Repair & Installation",
       "shortName": "Drywall",
       "icon": "🔨",
-      "image": "/images/services/drywall-repair.jpg",
+      "image": "/images/services/drywall-repair.webp",
       "description": "Professional drywall installation and replacement in basements, garages, and living spaces across Nassau and Suffolk counties.",
       "heroText": "GOAT Handyman & Remodeling installs and replaces drywall in finished basements, garages, and living spaces across Nassau and Suffolk counties. We handle projects ranging from replacing a damaged ceiling to hanging and finishing drywall throughout an entire room. If a leak damages the walls or ceiling, we can replace the affected drywall once the leak is fixed and the area is dry. We can also include primer, paint, and replacement baseboards in the same estimate so the room is ready to use again.",
       "bullets": [
@@ -124,7 +124,7 @@
       "name": "Carpentry Services",
       "shortName": "Carpentry",
       "icon": "🪚",
-      "image": "/images/services/carpentry.jpg",
+      "image": "/images/services/carpentry.webp",
       "description": "Finish carpentry throughout individual rooms, hallways, and entire floors on Long Island.",
       "heroText": "GOAT installs finish carpentry throughout individual rooms, hallways, and entire floors. If you're replacing flooring or interior doors, we can fit the baseboards, crown molding, and casing together so the profiles carry from one room into the next. We also build shelving for alcoves and storage areas, repair interior stairs, and install railings. When a home has original woodwork you want to keep, we use the existing trim as the reference for the new pieces.",
       "bullets": [
@@ -151,7 +151,7 @@
       "name": "Door Repair & Installation",
       "shortName": "Doors",
       "icon": "🚪",
-      "image": "/images/services/door-repair.jpg",
+      "image": "/images/services/door-repair.webp",
       "description": "Exterior entry doors, storm doors, and interior door replacement across Long Island homes.",
       "heroText": "GOAT replaces exterior entry doors, storm doors, and sets of interior doors. For a front entry, we inspect the jamb, threshold, and surrounding trim so the estimate covers any carpentry the new door needs. When replacing doors throughout a home, we measure each opening individually and account for differences in flooring height and frame alignment. We fit the hinges, handles, and latches and check that each door opens freely and closes securely.",
       "bullets": [
@@ -178,7 +178,7 @@
       "name": "Window Repair & Installation",
       "shortName": "Windows",
       "icon": "🪟",
-      "image": "/images/services/window-repair.jpg",
+      "image": "/images/services/window-repair.webp",
       "description": "Window repair and replacement with carpentry repairs and exterior sealing in one estimate.",
       "heroText": "When several windows are difficult to open, drafty, or surrounded by deteriorated wood, the right scope can vary from one opening to the next. GOAT checks the sash, sill, frame, and surrounding trim before recommending repair or replacement. We can combine replacement windows, carpentry repairs, and exterior sealing in one estimate. You'll know which openings need new units and where repairing the existing window and woodwork makes sense.",
       "bullets": [
@@ -205,7 +205,7 @@
       "name": "Flooring Repair & Installation",
       "shortName": "Flooring",
       "icon": "🏠",
-      "image": "/images/services/flooring.jpg",
+      "image": "/images/services/flooring.webp",
       "description": "Vinyl plank, laminate, hardwood, and tile flooring installation for bedrooms, hallways, and basements.",
       "heroText": "GOAT installs vinyl plank, laminate, hardwood, and tile flooring in bedrooms, hallways, basements, and adjoining living spaces. We also refinish existing hardwood floors and replace damaged flooring as part of a room repair. For a multi-room installation, we check the surface beneath the old floor and plan how the new material will run through doorways. Removal, preparation, baseboards, and transitions can all be included in the flooring estimate.",
       "bullets": [
@@ -232,7 +232,7 @@
       "name": "Deck Repair & Installation",
       "shortName": "Decks",
       "icon": "🏡",
-      "image": "/images/services/deck-repair.jpg",
+      "image": "/images/services/deck-repair.webp",
       "description": "Deck resurfacing, rebuilding, and new deck installation with proper framing inspection.",
       "heroText": "Worn deck boards can hide a larger issue, while a deck with sound framing may only need a new surface, stairs, and railings. GOAT checks the framing beneath the walking surface before quoting the project. We can resurface an existing deck, rebuild deteriorated sections, or replace the deck when the underlying structure is unsuitable for reuse. For new decks, we plan the walking area, stair access, and railing layout together.",
       "bullets": [
@@ -259,7 +259,7 @@
       "name": "Bathroom Remodeling",
       "shortName": "Bathrooms",
       "icon": "🚿",
-      "image": "/images/services/bathroom-remodeling.jpg",
+      "image": "/images/services/bathroom-remodeling.webp",
       "description": "Bathroom remodeling and shower renovation, from vanity updates to full-shower regrouting.",
       "heroText": "GOAT remodels bathrooms and renovates showers, from replacing a vanity and tile floor to updating the shower, fixtures, and lighting together. If you like your existing tile but the grout is cracking or the caulk is pulling away, we also quote full-shower regrouting and recaulking as a standalone project. We check for loose or damaged tiles first so the estimate identifies any tile replacement needed before the new grout goes in.",
       "bullets": [
@@ -286,7 +286,7 @@
       "name": "Kitchen Remodeling",
       "shortName": "Kitchens",
       "icon": "🍳",
-      "image": "/images/services/kitchen-remodeling.jpg",
+      "image": "/images/services/kitchen-remodeling.webp",
       "description": "Kitchen updates with new cabinets, countertops, backsplashes, flooring, and lighting.",
       "heroText": "GOAT updates kitchens with new cabinets, countertops, backsplashes, flooring, and lighting. If your existing layout works, we can build the renovation around it and focus on the finishes and storage you use every day. For a larger remodel, we plan cabinet dimensions, appliance clearances, sink placement, and lighting before the countertops are measured. The estimate can also include trim and finish carpentry where the new cabinets meet walls, ceilings, and adjoining rooms.",
       "bullets": [
@@ -313,7 +313,7 @@
       "name": "Siding Repair & Installation",
       "shortName": "Siding",
       "icon": "🏗️",
-      "image": "/images/services/siding.jpg",
+      "image": "/images/services/siding.webp",
       "description": "Vinyl, wood, fiber-cement, and aluminum siding repair and replacement on Long Island.",
       "heroText": "GOAT repairs and replaces vinyl, wood, fiber-cement, and aluminum siding. If damage is concentrated along one wall or around a window, we check the surrounding boards and trim before defining the repair area. For a partial replacement, we compare the profile and color of the existing siding with available materials so you know how closely the repair will match. We also quote full siding replacement when wear extends across several walls.",
       "bullets": [
@@ -340,7 +340,7 @@
       "name": "Insulation Services",
       "shortName": "Insulation",
       "icon": "🌡️",
-      "image": "/images/services/insulation.jpg",
+      "image": "/images/services/insulation.webp",
       "description": "Attic insulation removal and installation in attics, walls, crawl spaces, and basements.",
       "heroText": "GOAT removes old attic insulation and installs new insulation in attics, walls, crawl spaces, and basements. For an attic upgrade, we check the depth and coverage of the existing material and look for gaps in accessible areas before quoting removal or installation. If you're remodeling a room or finishing a basement, we can also plan wall insulation while the cavities are exposed, before drywall closes them up.",
       "bullets": [
@@ -367,7 +367,7 @@
       "name": "Light Plumbing & Electrical",
       "shortName": "Plumbing/Elec",
       "icon": "🔧",
-      "image": "/images/services/plumbing.jpg",
+      "image": "/images/services/plumbing.webp",
       "description": "Plumbing and lighting upgrades in kitchen, bathroom, and multi-room renovations.",
       "heroText": "GOAT includes plumbing and lighting upgrades in kitchen, bathroom, and multi-room renovations. A bathroom project can combine vanity, sink, faucet, and vanity-light replacement across one or more rooms. In a kitchen, we can plan the sink and faucet around the new countertops and include lighting updates in the same estimate. Share your fixture list and room layout so we can coordinate the work with the cabinetry, ceilings, tile, and painting.",
       "bullets": [
