@@ -1690,7 +1690,6 @@ Allow: /
 Disallow: /thank-you.html
 
 Sitemap: https://{B['domain']}/sitemap.xml
-Agentmap: https://{B['domain']}/.well-known/ai-catalog.json
 """)
 
 
