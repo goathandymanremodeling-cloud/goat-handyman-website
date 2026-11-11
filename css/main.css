@@ -954,6 +954,49 @@ nav.breadcrumbs {
   margin-top: 2px;
 }
 
+/* ── Google-style review cards ─────────────────────────────── */
+.review-card.google-review::before { content: none; }
+.review-card.google-review::after { content: none; }
+.review-card.google-review .review-text { font-style: normal; }
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.review-header-text { flex: 1; min-width: 0; }
+.review-date {
+  font-size: 0.8rem;
+  color: var(--gray-mid);
+  margin-top: 2px;
+}
+.review-source {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--gray-mid);
+}
+.review-source .google-g { width: 14px; height: 14px; flex-shrink: 0; }
+.google-g { display: inline-flex; vertical-align: middle; }
+.google-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 1rem;
+  color: var(--gray-dark);
+  flex-wrap: wrap;
+}
+.google-badge .google-g { width: 20px; height: 20px; flex-shrink: 0; }
+.google-badge strong { font-size: 1.15rem; color: var(--black); }
+.google-badge .review-stars { margin-bottom: 0; }
+.google-badge a { color: var(--green); font-weight: 600; }
+
 /* ── City grid ───────────────────────────────────────────── */
 .city-grid {
   display: grid;
