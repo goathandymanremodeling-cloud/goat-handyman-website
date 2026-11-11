@@ -11,6 +11,12 @@ import json, os, re, shutil
 with open("site.config.json", encoding="utf-8") as f:
     cfg = json.load(f)
 
+# Critical (above-the-fold) CSS, inlined in every page so the first paint does
+# not wait for the stylesheets. Regenerate with extract_critical.py whenever
+# main.css / builders-design.css / theme.css change.
+with open("css/critical.css", encoding="utf-8") as f:
+    CRITICAL_CSS = f.read()
+
 B = cfg["brand"]
 SERVICES = cfg["services"]
 AREAS = cfg["serviceAreas"]
@@ -303,9 +309,11 @@ def head(title, desc, canonical, schema="", extra_head=""):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="{font_url}" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="{font_url}" /></noscript>
-  <link rel="stylesheet" href="{BASE}/css/main.css?v=3" />
-  <link rel="stylesheet" href="{BASE}/css/theme.css?v=2" />
-  <link rel="stylesheet" href="{BASE}/css/builders-design.css?v=2" />
+  <style>{CRITICAL_CSS}</style>
+  <link rel="preload" as="style" href="{BASE}/css/main.css?v=3" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" as="style" href="{BASE}/css/theme.css?v=2" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" as="style" href="{BASE}/css/builders-design.css?v=2" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="{BASE}/css/main.css?v=3" /><link rel="stylesheet" href="{BASE}/css/theme.css?v=2" /><link rel="stylesheet" href="{BASE}/css/builders-design.css?v=2" /></noscript>
 </head>
 <body>"""
 
