@@ -293,7 +293,7 @@ def head(title, desc, canonical, schema=""):
   <meta property="og:url" content="https://{B['domain']}{canonical}" />
   <meta property="og:image" content="{BASE}/images/hero-bg.jpg" />
   <meta name="robots" content="index, follow" />
-  <link rel="icon" href="{BASE}/images/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="{BASE}/images/logo.png" type="image/png" />
   <link rel="apple-touch-icon" href="{BASE}/images/logo.png" />
   <link rel="sitemap" type="application/xml" href="{BASE}/sitemap.xml" />
   {schema}
@@ -575,8 +575,8 @@ def make_homepage():
     </div>""" for f in FAQS[:5])
 
     content = f"""{head(
-        f"{B['industry']} in {B['city']}, NY | {NAME} | {PHONE}",
-        f"{NAME} provides professional {B['industryLower']} in {B['city']}, NY. Call {PHONE} for a free estimate!",
+        f"{B['industry']} in {B.get('homeArea', B['city'])}, NY | {NAME} | {PHONE}",
+        f"{NAME} provides professional {B['industryLower']} in {B.get('homeArea', B['city'])}, NY. Call {PHONE} for a free estimate!",
         "/",
         LOCAL_BIZ_SCHEMA
     )}
@@ -1437,7 +1437,7 @@ def make_thank_you():
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Request Received | {NAME}</title>
   <meta name="robots" content="noindex" />
-  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/images/logo.png" type="image/png" />
   <link rel="apple-touch-icon" href="/images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
