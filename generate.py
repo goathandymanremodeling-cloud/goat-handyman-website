@@ -1372,7 +1372,7 @@ def make_reviews():
   <div class="container">
     <div class="review-grid">{all_reviews}</div>
     <div class="cta-inline mt-4 text-center">
-      <p>Want to leave a review? <a href="https://g.page/r/GOOGLE_REVIEW_LINK/review" target="_blank" rel="noopener">Leave us a Google review →</a></p>
+      <p>Want to leave a review? <a href="https://g.page/r/CTg78e2A46fiEAI/review" target="_blank" rel="noopener">Leave us a Google review →</a></p>
     </div>
   </div>
 </section>
