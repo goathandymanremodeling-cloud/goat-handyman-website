@@ -1,0 +1,16 @@
+# 301 redirects for the 13 town pages removed Oct 20, 2026.
+# Each deleted town redirects to its nearest live town page.
+# Cloudflare Pages reads this file from the publish root.
+/service-areas/hempstead-ny/ /service-areas/garden-city-ny/ 301
+/service-areas/hicksville-ny/ /service-areas/plainview-ny/ 301
+/service-areas/freeport-ny/ /service-areas/merrick-ny/ 301
+/service-areas/massapequa-ny/ /service-areas/wantagh-ny/ 301
+/service-areas/valley-stream-ny/ /service-areas/lynbrook-ny/ 301
+/service-areas/uniondale-ny/ /service-areas/east-meadow-ny/ 301
+/service-areas/baldwin-ny/ /service-areas/rockville-centre-ny/ 301
+/service-areas/oceanside-ny/ /service-areas/rockville-centre-ny/ 301
+/service-areas/bellmore-ny/ /service-areas/merrick-ny/ 301
+/service-areas/seaford-ny/ /service-areas/wantagh-ny/ 301
+/service-areas/bethpage-ny/ /service-areas/plainview-ny/ 301
+/service-areas/elmont-ny/ /service-areas/garden-city-ny/ 301
+/service-areas/franklin-square-ny/ /service-areas/garden-city-ny/ 301
