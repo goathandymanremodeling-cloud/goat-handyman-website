@@ -285,7 +285,7 @@ def footer():
 <script src="{BASE}/js/main.js" defer></script>"""
 
 def head(title, desc, canonical, schema="", extra_head=""):
-    font_url = B.get('fontUrl', 'https://fonts.googleapis.com/css2?family=' + FONT.replace(' ', '+') + ':wght@400;500;600;700;800&display=swap')
+    font_url = B.get('fontUrl', 'https://fonts.googleapis.com/css2?family=' + FONT.replace(' ', '+') + ':wght@400;500;600;700;800&display=optional')
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1475,7 +1475,7 @@ def make_thank_you():
   <link rel="apple-touch-icon" href="/images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="{B.get('fontUrl', 'https://fonts.googleapis.com/css2?family=' + FONT.replace(' ', '+') + ':wght@400;500;600;700;800&display=swap')}" rel="stylesheet" />
+  <link href="{B.get('fontUrl', 'https://fonts.googleapis.com/css2?family=' + FONT.replace(' ', '+') + ':wght@400;500;600;700;800&display=optional')}" rel="stylesheet" />
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/theme.css" />
   <link rel="stylesheet" href="{BASE}/css/builders-design.css" />
