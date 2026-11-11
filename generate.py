@@ -310,10 +310,10 @@ def head(title, desc, canonical, schema="", extra_head=""):
   <link rel="preload" as="style" href="{font_url}" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="{font_url}" /></noscript>
   <style>{CRITICAL_CSS}</style>
-  <link rel="preload" as="style" href="{BASE}/css/main.css?v=3" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" as="style" href="{BASE}/css/main.css?v=4" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" as="style" href="{BASE}/css/theme.css?v=2" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" as="style" href="{BASE}/css/builders-design.css?v=2" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="{BASE}/css/main.css?v=3" /><link rel="stylesheet" href="{BASE}/css/theme.css?v=2" /><link rel="stylesheet" href="{BASE}/css/builders-design.css?v=2" /></noscript>
+  <noscript><link rel="stylesheet" href="{BASE}/css/main.css?v=4" /><link rel="stylesheet" href="{BASE}/css/theme.css?v=2" /><link rel="stylesheet" href="{BASE}/css/builders-design.css?v=2" /></noscript>
 </head>
 <body>"""
 
