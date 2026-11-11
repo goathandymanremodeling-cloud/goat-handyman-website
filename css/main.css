@@ -434,26 +434,25 @@ nav.breadcrumbs {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 16px;
   z-index: 3;
 }
 .hero-dot {
-  width: 24px;
-  height: 24px;
-  padding: 7px;
+  width: 28px;
+  height: 28px;
+  padding: 9px;
   background-clip: content-box;
   border-radius: 50%;
   background: rgba(255,255,255,0.4);
   border: none;
   cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
+  transition: background 0.3s;
 }
 .hero-dot:hover {
   background: rgba(255,255,255,0.7);
 }
 .hero-dot.active {
   background: var(--accent);
-  transform: scale(1.2);
 }
 .hero .container {
   position: relative;
