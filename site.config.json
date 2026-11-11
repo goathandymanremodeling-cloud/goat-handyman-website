@@ -518,6 +518,11 @@
       "county": "Nassau"
     },
     {
+      "slug": "massapequa-ny",
+      "name": "Massapequa",
+      "county": "Nassau"
+    },
+    {
       "slug": "bay-shore-ny",
       "name": "Bay Shore",
       "county": "Suffolk"
@@ -570,6 +575,11 @@
     {
       "slug": "commack-ny",
       "name": "Commack",
+      "county": "Suffolk"
+    },
+    {
+      "slug": "manorville-ny",
+      "name": "Manorville",
       "county": "Suffolk"
     }
   ],
