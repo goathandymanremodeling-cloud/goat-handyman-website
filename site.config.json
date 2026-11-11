@@ -520,22 +520,74 @@
   ],
   "reviews": [
     {
-      "text": "GOAT Handyman completely transformed our kitchen. The attention to detail was incredible - they respected our home, communicated every step of the way, and the finished product looks amazing.",
-      "name": "Maria S.",
-      "location": "Garden City, NY",
-      "rating": 5
+      "text": "I called GOAT Handyman to clean up my basement after getting walls removed for waterproofing. Ben was super responsive in getting out to see the damage and came up with best possible plan. Then both him and Tom got the job done quickly and beautifully. Awesome work!",
+      "name": "Jonathan Stein",
+      "location": "Long Island, NY",
+      "rating": 5,
+      "date": "2026-07-01"
     },
     {
-      "text": "We had water damage in our bathroom and needed a full remodel. GOAT handled everything from demolition to the final tile work. Professional, on time, and excellent quality.",
-      "name": "Robert K.",
-      "location": "Manhasset, NY",
-      "rating": 5
+      "text": "I finally found a handyman company that I can trust and rely on! The work done by Ben and company in my home was top-notch. Excellent. Clean. Responsive. Professional, and quick. No hassles. No headaches. The way it should be. I will absolutely be calling this company again for all my home repair needs. Thank You.",
+      "name": "Dmitri O",
+      "location": "Long Island, NY",
+      "rating": 5,
+      "date": "2026-10-01"
     },
     {
-      "text": "Called for a simple deck repair and was impressed by their professionalism. They ended up refinishing the whole deck and it looks brand new. Fair pricing and great work.",
-      "name": "Jennifer L.",
-      "location": "Roslyn, NY",
-      "rating": 5
+      "text": "Thank you so much for renovating my basement! Highly recommended and they delivered what they promised",
+      "name": "Kingston Moore",
+      "location": "Long Island, NY",
+      "rating": 5,
+      "date": "2026-11-10"
+    },
+    {
+      "text": "Ben and the team did a truly excellent job on my basement! Their work was excellent, and they were meticulous, honest, and kind. Their level of attention and efficiency was truly remarkable. Ben provides a personal touch and a reliable warranty that gives you confidence in their services. I highly recommend their services to anyone!",
+      "name": "Meir Balassiano",
+      "location": "Long Island, NY",
+      "rating": 5,
+      "date": "2026-06-01"
+    },
+    {
+      "text": "Timely, efficient and professional. The owner was understanding and helped reassure us that the problem was going to be fixed as described. They cleaned up after themselves and stuck to the budget to a penny. 10/10 would recommend!!!!",
+      "name": "Ofer Abrahamson",
+      "location": "Long Island, NY",
+      "rating": 5,
+      "date": "2026-06-01"
+    },
+    {
+      "text": "Thank you for the team for fixing my drywall and ceiling, I had mold in a few places in the living room and they fix it and the result was great! Thanks and really happy with choosing them",
+      "name": "Asif Arman",
+      "location": "Long Island, NY",
+      "rating": 5,
+      "date": "2026-09-01"
+    },
+    {
+      "text": "They did everything I needed to make my bathroom perfect. Great experience with the whole team!",
+      "name": "Andrea Lopes",
+      "location": "Long Island, NY",
+      "rating": 5,
+      "date": "2026-05-01"
+    },
+    {
+      "text": "Great, professional! Repaired my broken and rotted rafters. Worked with me on price, and worked great with my roofer.",
+      "name": "Chris Quinn",
+      "location": "Long Island, NY",
+      "rating": 5,
+      "date": "2026-09-01"
+    },
+    {
+      "text": "They just finish to paint my entire house! Amazing job, very professional!",
+      "name": "Eden Malimovka",
+      "location": "Long Island, NY",
+      "rating": 5,
+      "date": "2026-10-21"
+    },
+    {
+      "text": "Had a list of different repairs and didn't want to deal with multiple contractors. They took care of it all. The team was professional and friendly and the work was excellent. Definitely you can rely on",
+      "name": "Guy Schwartz",
+      "location": "Long Island, NY",
+      "rating": 5,
+      "date": "2026-04-01"
     }
   ],
   "faqs": [
