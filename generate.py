@@ -251,15 +251,15 @@ def footer():
         {social_html}
       </div>
       <div class="footer-col">
-        <h4>Our Services</h4>
+        <h3>Our Services</h3>
         <ul>{service_links}</ul>
       </div>
       <div class="footer-col">
-        <h4>Service Areas</h4>
+        <h3>Service Areas</h3>
         <ul>{areas1_links}<li><a href="{BASE}/service-areas/">All Areas →</a></li></ul>
       </div>
       <div class="footer-col">
-        <h4>More Areas</h4>
+        <h3>More Areas</h3>
         <ul>{areas2_links}<li><a href="{BASE}/service-areas/">All Areas →</a></li></ul>
       </div>
     </div>
@@ -325,7 +325,7 @@ def booking_form(compact=False):
     <div class="form-group"><label>Name *</label><input type="text" name="name" required placeholder="Your full name" /></div>
     <div class="form-group"><label>Phone *</label><input type="tel" name="phone" required placeholder="{PHONE}" /></div>
     <div class="form-group"><label>Service</label>
-      <select name="service"><option value="">Select a service...</option>{service_opts}</select>
+      <select name="service" aria-label="Select a service"><option value="">Select a service...</option>{service_opts}</select>
     </div>
     <div class="form-group"><label>Details</label><textarea name="message" rows="3" placeholder="Tell us about your project..."></textarea></div>
     <input type="text" name="_honey" style="display:none" />
@@ -351,7 +351,7 @@ def booking_form(compact=False):
     </div>
     <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="you@email.com" /></div>
     <div class="form-group"><label>Service Needed *</label>
-      <select name="service" required><option value="">Select a service...</option>{service_opts}<option value="other">Other / Not Sure</option></select>
+      <select name="service" required aria-label="Select a service"><option value="">Select a service...</option>{service_opts}<option value="other">Other / Not Sure</option></select>
     </div>
     <div class="form-group"><label>Project Details</label><textarea name="message" rows="4" placeholder="Describe your project, property size, timeline..."></textarea></div>
     <input type="text" name="_honey" style="display:none" />
@@ -567,7 +567,7 @@ def make_homepage():
       <div class="service-card-body">
         <h3>{s['name']}</h3>
         <p>{s['description']}</p>
-        <a href="{BASE}/services/{s['slug']}/" class="card-link">Learn More →</a>
+        <a href="{BASE}/services/{s['slug']}/" class="card-link" aria-label="Learn more about {s['name']}">Learn More →</a>
       </div>
     </div>""")
     service_cards = "\n".join(service_cards_list)
@@ -639,7 +639,7 @@ def make_homepage():
   hero.addEventListener('mouseenter', stop);
   hero.addEventListener('mouseleave', start);
   start();
-  window.addEventListener('load', function() {{ slides.forEach(loadBg); }});
+  window.addEventListener('load', function() {{ slides.forEach(loadBg); document.querySelector('#hero-carousel .hero-slides').classList.add('animated'); }});
 }})();
 </script>
 
@@ -660,7 +660,7 @@ def make_homepage():
       <div class="icon-circle">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       </div>
-      <h3>Call Us</h3>
+      <h2>Call Us</h2>
       <p>Speak directly with our team - quick response guaranteed</p>
       <a href="tel:{PHONE_RAW}" class="btn btn-outline-white">{PHONE}</a>
     </div>
@@ -668,7 +668,7 @@ def make_homepage():
       <div class="icon-circle">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
       </div>
-      <h3>Email Us</h3>
+      <h2>Email Us</h2>
       <p>Send us your project details and we'll follow up promptly</p>
       <a href="mailto:{B['email']}" class="btn btn-outline-white">{B['email']}</a>
     </div>
@@ -676,7 +676,7 @@ def make_homepage():
       <div class="icon-circle">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
       </div>
-      <h3>Free Estimate</h3>
+      <h2>Free Estimate</h2>
       <p>No pressure, no obligation - just honest pricing upfront</p>
       <a href="{BASE}/request-service.html" class="btn btn-secondary">Get Started</a>
     </div>
@@ -991,7 +991,7 @@ def make_services_hub():
       <div class="service-card-body">
         <h3><a href="{BASE}/services/{s['slug']}/">{s['name']}</a></h3>
         <p>{s['description']}</p>
-        <a href="{BASE}/services/{s['slug']}/" class="card-link">Learn More →</a>
+        <a href="{BASE}/services/{s['slug']}/" class="card-link" aria-label="Learn more about {s['name']}">Learn More →</a>
       </div>
     </div>""")
     cards = "\n".join(cards_list)
@@ -1690,6 +1690,7 @@ Allow: /
 Disallow: /thank-you.html
 
 Sitemap: https://{B['domain']}/sitemap.xml
+Agentmap: https://{B['domain']}/.well-known/ai-catalog.json
 """)
 
 
