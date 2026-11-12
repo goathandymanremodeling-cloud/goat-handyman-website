@@ -463,7 +463,7 @@ _avg_rating = sum(r["rating"] for r in REVIEWS) / len(REVIEWS) if REVIEWS else 5
 _aggregate_rating = json.dumps({
     "@type": "AggregateRating",
     "ratingValue": str(round(_avg_rating, 1)),
-    "reviewCount": str(len(REVIEWS)),
+    "reviewCount": str(B.get('googleReviewCount', len(REVIEWS))),
     "bestRating": "5",
     "worstRating": "1"
 })
@@ -829,7 +829,7 @@ def make_homepage():
     <div class="section-header">
       <span class="eyebrow">Client Reviews</span>
       <h2>What Long Island Homeowners Say</h2>
-      <div class="google-badge">{GOOGLE_G} <strong>5.0</strong> <span class="review-stars">{ICON["star"] * 5}</span> · Based on <a href="{GOOGLE_REVIEWS_URL}" target="_blank" rel="noopener">32 Google reviews</a></div>
+      <div class="google-badge">{GOOGLE_G} <strong>5.0</strong> <span class="review-stars">{ICON["star"] * 5}</span> · Based on <a href="{GOOGLE_REVIEWS_URL}" target="_blank" rel="noopener">{B.get('googleReviewCount', len(REVIEWS))} Google reviews</a></div>
     </div>
     <div class="review-grid">
       {review_cards()}
@@ -1394,7 +1394,7 @@ def make_reviews():
   <div class="container">
     <h1>Customer Reviews</h1>
     <p>See what Long Island homeowners and businesses say about {NAME}.</p>
-    <div class="google-badge">{GOOGLE_G} <strong>5.0</strong> <span class="review-stars">{ICON["star"] * 5}</span> · Based on <a href="{GOOGLE_REVIEWS_URL}" target="_blank" rel="noopener">32 Google reviews</a></div>
+    <div class="google-badge">{GOOGLE_G} <strong>5.0</strong> <span class="review-stars">{ICON["star"] * 5}</span> · Based on <a href="{GOOGLE_REVIEWS_URL}" target="_blank" rel="noopener">{B.get('googleReviewCount', len(REVIEWS))} Google reviews</a></div>
   </div>
 </section>
 <section class="section">
