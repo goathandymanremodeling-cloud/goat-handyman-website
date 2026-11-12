@@ -192,7 +192,7 @@ def nav(active=""):
       </ul>
       <div class="nav-cta">
         <a href="tel:{PHONE_RAW}" class="nav-phone">{PHONE}</a>
-        <a href="{BASE}/request-service.html" class="btn btn-primary btn-sm">Get Started</a>
+        <a href="{BASE}/request-service" class="btn btn-primary btn-sm">Get Started</a>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -205,7 +205,7 @@ def nav(active=""):
     <img src="{BASE}/images/logo.png" alt="{NAME}" width="35" height="40" />
     <button id="mobile-close" aria-label="Close">✕</button>
   </div>
-  <a href="{BASE}/request-service.html" class="btn btn-primary mobile-cta">Get Free Estimate</a>
+  <a href="{BASE}/request-service" class="btn btn-primary mobile-cta">Get Free Estimate</a>
   <a href="tel:{PHONE_RAW}" class="btn btn-outline mobile-cta">{PHONE}</a>
   <button class="mobile-services-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
     Services <span class="toggle-icon">▼</span>
@@ -274,9 +274,9 @@ def footer():
     <div class="container footer-bottom-inner">
       <span>&copy; <span id="yr"></span> {NAME}. All rights reserved.</span>
       <div class="footer-legal">
-        <a href="{BASE}/privacy-policy.html">Privacy Policy</a>
-        <a href="{BASE}/terms.html">Terms of Use</a>
-        <a href="{BASE}/accessibility.html">Accessibility</a>
+        <a href="{BASE}/privacy-policy">Privacy Policy</a>
+        <a href="{BASE}/terms">Terms of Use</a>
+        <a href="{BASE}/accessibility">Accessibility</a>
       </div>
     </div>
   </div>
@@ -336,7 +336,7 @@ def booking_form(compact=False):
     </div>
     <div class="form-group"><label>Details</label><textarea name="message" rows="3" placeholder="Tell us about your project..."></textarea></div>
     <input type="text" name="_honey" style="display:none" />
-    <input type="hidden" name="_next" value="https://www.goathandymanremodeling.com/thank-you.html" />
+    <input type="hidden" name="_next" value="https://www.goathandymanremodeling.com/thank-you" />
     <input type="hidden" name="_captcha" value="false" />
     <button type="submit" class="btn btn-primary btn-block">Send Request →</button>
   </form>
@@ -363,7 +363,7 @@ def booking_form(compact=False):
     <div class="form-group"><label>Project Details</label><textarea name="message" rows="4" placeholder="Describe your project, property size, timeline..."></textarea></div>
     <input type="text" name="_honey" style="display:none" />
     <input type="hidden" name="_subject" value="New Estimate Request - {NAME}" />
-    <input type="hidden" name="_next" value="https://www.goathandymanremodeling.com/thank-you.html" />
+    <input type="hidden" name="_next" value="https://www.goathandymanremodeling.com/thank-you" />
     <input type="hidden" name="_captcha" value="false" />
     <button type="submit" class="btn btn-primary btn-block">Send My Request →</button>
     <p class="form-disclaimer">We respect your privacy. No spam, ever.</p>
@@ -532,7 +532,7 @@ def gallery_section():
 {items_html}
     </div>
     <div class="text-center mt-4">
-      <a href="{BASE}/request-service.html" class="btn btn-primary">Start Your Project</a>
+      <a href="{BASE}/request-service" class="btn btn-primary">Start Your Project</a>
     </div>
   </div>
 </section>"""
@@ -569,7 +569,7 @@ def work_section():
       {items_html}
     </div>
     <div class="text-center mt-4">
-      <a href="{BASE}/request-service.html" class="btn btn-primary">Start Your Project</a>
+      <a href="{BASE}/request-service" class="btn btn-primary">Start Your Project</a>
     </div>
   </div>
 </section>"""
@@ -632,7 +632,7 @@ def make_homepage():
       <h1>{B['tagline']}</h1>
       <p id="hero-p">{B.get('heroSubtext', '')}</p>
       <div class="hero-actions">
-        <a href="{BASE}/request-service.html" class="btn btn-primary btn-lg">Get a Free Estimate</a>
+        <a href="{BASE}/request-service" class="btn btn-primary btn-lg">Get a Free Estimate</a>
         <a href="tel:{PHONE_RAW}" class="btn btn-outline-white btn-lg">Call {PHONE}</a>
       </div>
       <div class="hero-trust">
@@ -711,7 +711,7 @@ def make_homepage():
       </div>
       <h2>Free Estimate</h2>
       <p>No pressure, no obligation - just honest pricing upfront</p>
-      <a href="{BASE}/request-service.html" class="btn btn-secondary">Get Started</a>
+      <a href="{BASE}/request-service" class="btn btn-secondary">Get Started</a>
     </div>
   </div>
 </section>
@@ -742,7 +742,7 @@ def make_homepage():
       </div>
     </div>
     <div class="text-center" style="margin-top:2.5rem">
-      <a href="{BASE}/request-service.html" class="btn btn-primary btn-lg">Start Your Project</a>
+      <a href="{BASE}/request-service" class="btn btn-primary btn-lg">Start Your Project</a>
     </div>
   </div>
 </section>
@@ -876,7 +876,7 @@ def make_homepage():
     <h2>Ready to Start Your Project?</h2>
     <p>No pressure, no obligation - just honest work and fair pricing from a team that knows Long Island.</p>
     <div class="cta-actions">
-      <a href="{BASE}/request-service.html" class="btn btn-secondary btn-lg">Get a Free Estimate</a>
+      <a href="{BASE}/request-service" class="btn btn-secondary btn-lg">Get a Free Estimate</a>
       <a href="tel:{PHONE_RAW}" class="btn btn-outline-white btn-lg">Call {PHONE}</a>
     </div>
   </div>
@@ -944,7 +944,7 @@ def make_service_page(s):
     <h1>{s['name']}</h1>
     <p>{s['description']}</p>
     <div class="hero-actions">
-      <a href="{BASE}/request-service.html" class="btn btn-secondary btn-lg">Get Free Estimate</a>
+      <a href="{BASE}/request-service" class="btn btn-secondary btn-lg">Get Free Estimate</a>
       <a href="tel:{PHONE_RAW}" class="btn btn-outline-white">Call {PHONE}</a>
     </div>
   </div>
@@ -960,7 +960,7 @@ def make_service_page(s):
       <h3>Why Choose {NAME}?</h3>
       <p>We're locally owned and operated - not a national franchise. Every job is handled by our trained crew, and we back every service with our workmanship warranty.</p>
       <div class="cta-inline">
-        <a href="{BASE}/request-service.html" class="btn btn-primary btn-lg">Get a Free Estimate</a>
+        <a href="{BASE}/request-service" class="btn btn-primary btn-lg">Get a Free Estimate</a>
         <a href="tel:{PHONE_RAW}" class="btn btn-outline">Call {PHONE}</a>
       </div>
       <h3>Service Areas</h3>
@@ -1002,7 +1002,7 @@ def make_service_page(s):
     <h2>Need {s['name']} on Long Island?</h2>
     <p>Call or fill out the form above - we respond within 1 business hour with a free estimate.</p>
     <div class="cta-actions">
-      <a href="{BASE}/request-service.html" class="btn btn-secondary btn-lg">Get Free Estimate</a>
+      <a href="{BASE}/request-service" class="btn btn-secondary btn-lg">Get Free Estimate</a>
       <a href="tel:{PHONE_RAW}" class="btn btn-outline-white btn-lg">Call {PHONE}</a>
     </div>
   </div>
@@ -1055,7 +1055,7 @@ def make_services_hub():
     <h2>Not Sure What You Need?</h2>
     <p>Call us and describe your property - we'll recommend the right services and give you a free estimate.</p>
     <div class="cta-actions">
-      <a href="{BASE}/request-service.html" class="btn btn-secondary btn-lg">Get Free Estimate</a>
+      <a href="{BASE}/request-service" class="btn btn-secondary btn-lg">Get Free Estimate</a>
       <a href="tel:{PHONE_RAW}" class="btn btn-outline-white btn-lg">Call {PHONE}</a>
     </div>
   </div>
@@ -1106,7 +1106,7 @@ def make_city_page(area):
     <h1>{B['industry']} in {city}, NY</h1>
     <p>{NAME} serves {city} and surrounding {county} County homeowners. Call {PHONE} for a free estimate today.</p>
     <div class="hero-actions">
-      <a href="{BASE}/request-service.html" class="btn btn-secondary btn-lg">Get Free Estimate</a>
+      <a href="{BASE}/request-service" class="btn btn-secondary btn-lg">Get Free Estimate</a>
       <a href="tel:{PHONE_RAW}" class="btn btn-outline-white">Call {PHONE}</a>
     </div>
   </div>
@@ -1150,7 +1150,7 @@ def make_city_page(area):
     <h2>Need {B['industry']} in {city}, NY?</h2>
     <p>We're nearby and ready. Call or submit the form - response within 1 business hour.</p>
     <div class="cta-actions">
-      <a href="{BASE}/request-service.html" class="btn btn-secondary btn-lg">Get Free Estimate</a>
+      <a href="{BASE}/request-service" class="btn btn-secondary btn-lg">Get Free Estimate</a>
       <a href="tel:{PHONE_RAW}" class="btn btn-outline-white btn-lg">Call {PHONE}</a>
     </div>
   </div>
@@ -1203,7 +1203,7 @@ def make_areas_hub():
     <h2>Serving All of Long Island</h2>
     <p>Call or request online for service in your area.</p>
     <div class="cta-actions">
-      <a href="{BASE}/request-service.html" class="btn btn-secondary btn-lg">Get Free Estimate</a>
+      <a href="{BASE}/request-service" class="btn btn-secondary btn-lg">Get Free Estimate</a>
       <a href="tel:{PHONE_RAW}" class="btn btn-outline-white btn-lg">Call {PHONE}</a>
     </div>
   </div>
@@ -1313,7 +1313,7 @@ def make_about():
     <h2>Let's Talk About Your Home</h2>
     <p>Whether you have a list of repairs or a room you're ready to improve, tell us what you have in mind.</p>
     <div class="cta-actions">
-      <a href="{BASE}/request-service.html" class="btn btn-secondary btn-lg">Request an Estimate</a>
+      <a href="{BASE}/request-service" class="btn btn-secondary btn-lg">Request an Estimate</a>
       <a href="tel:{PHONE_RAW}" class="btn btn-outline-white btn-lg">Call {PHONE}</a>
     </div>
   </div>
@@ -1364,7 +1364,7 @@ def make_faq():
   <div class="container">
     <h2>Ready to Get Started?</h2>
     <div class="cta-actions">
-      <a href="{BASE}/request-service.html" class="btn btn-secondary btn-lg">Get Free Estimate</a>
+      <a href="{BASE}/request-service" class="btn btn-secondary btn-lg">Get Free Estimate</a>
       <a href="tel:{PHONE_RAW}" class="btn btn-outline-white btn-lg">Call {PHONE}</a>
     </div>
   </div>
@@ -1409,7 +1409,7 @@ def make_reviews():
   <div class="container">
     <h2>Join Our Happy Customers</h2>
     <div class="cta-actions">
-      <a href="{BASE}/request-service.html" class="btn btn-secondary btn-lg">Get Free Estimate</a>
+      <a href="{BASE}/request-service" class="btn btn-secondary btn-lg">Get Free Estimate</a>
       <a href="tel:{PHONE_RAW}" class="btn btn-outline-white btn-lg">Call {PHONE}</a>
     </div>
   </div>
@@ -1428,7 +1428,7 @@ def make_request_service():
     content = f"""{head(
         f"Request a Free Estimate | {NAME} | {PHONE}",
         f"Request a free {B['industryLower']} estimate from {NAME} in {B['city']}, NY. We serve all of Long Island and respond within 1 business hour.",
-        "/request-service.html",
+        "/request-service",
         bc_schema
     )}
 {nav()}
@@ -1574,7 +1574,7 @@ def make_blog_pages():
 </ul>
 <h2>What Our Team Recommends</h2>
 <p>At {NAME}, every landscape design starts with a site visit where we assess your soil, sun exposure, drainage, and existing plantings. We only recommend plants we know will thrive on Long Island - not whatever looks good at a nursery in the moment.</p>
-<p>Want a plant selection that will actually last? <a href="{BASE}/request-service.html">Request a free consultation</a> and we'll walk your property and give you honest recommendations.</p>"""
+<p>Want a plant selection that will actually last? <a href="{BASE}/request-service">Request a free consultation</a> and we'll walk your property and give you honest recommendations.</p>"""
         },
         {
             "slug": "outdoor-landscaping-ideas",
@@ -1600,7 +1600,7 @@ def make_blog_pages():
   <li><strong>Outdoor living environment</strong> - pergola, fire feature, outdoor kitchen, and entertaining space</li>
   <li><strong>Paver driveway</strong> - one of the highest ROI upgrades for Long Island homes</li>
 </ul>
-<p>Not sure what fits your budget and property? {NAME} offers free on-site consultations where we can help you prioritize and plan. <a href="{BASE}/request-service.html">Book yours today.</a></p>"""
+<p>Not sure what fits your budget and property? {NAME} offers free on-site consultations where we can help you prioritize and plan. <a href="{BASE}/request-service">Book yours today.</a></p>"""
         },
         {
             "slug": "spring-lawn-tuneup",
@@ -1619,7 +1619,7 @@ def make_blog_pages():
 <h2>Why Timing Matters</h2>
 <p>The window for effective spring prep on Long Island is roughly <strong>late March through early May</strong>. Too early and the ground is still frozen; too late and fast-growing weeds get ahead of you. Getting on the schedule early means your property looks great from the first warm weekend.</p>
 <h2>Book Before the Rush</h2>
-<p>Spring is our busiest season. If you want to get on the schedule, reach out in late winter - spots fill up fast. <a href="{BASE}/request-service.html">Request a free estimate</a> and we'll assess your property and put together a spring plan.</p>"""
+<p>Spring is our busiest season. If you want to get on the schedule, reach out in late winter - spots fill up fast. <a href="{BASE}/request-service">Request a free estimate</a> and we'll assess your property and put together a spring plan.</p>"""
         }
     ]
     for post in posts:
@@ -1643,7 +1643,7 @@ def make_blog_pages():
       <div class="blog-post-cta">
         <h3>Ready to Transform Your Outdoor Space?</h3>
         <p>{NAME} serves all of Long Island - Nassau &amp; Suffolk Counties. Free estimates, no obligation.</p>
-        <a href="{BASE}/request-service.html" class="btn btn-primary">Get a Free Estimate</a>
+        <a href="{BASE}/request-service" class="btn btn-primary">Get a Free Estimate</a>
       </div>
     </article>
     <aside class="blog-post-sidebar">
@@ -1655,7 +1655,7 @@ def make_blog_pages():
         <div style="padding:20px">
           <p style="font-size:.9rem;color:var(--gray-dark);margin-bottom:16px">Ready to get started? Call or text us and we'll schedule a free on-site consultation.</p>
           <a href="tel:{PHONE_RAW}" class="btn btn-primary btn-block">Call {PHONE}</a>
-          <a href="{BASE}/request-service.html" class="btn btn-outline btn-block" style="margin-top:10px">Request Online</a>
+          <a href="{BASE}/request-service" class="btn btn-outline btn-block" style="margin-top:10px">Request Online</a>
         </div>
       </div>
       <div class="sidebar-services">
@@ -1681,7 +1681,7 @@ def make_legal():
         ("accessibility", "Accessibility", f"<p>{NAME} is committed to ensuring this website is accessible to people with disabilities. If you experience any difficulty, please call us at {PHONE} and we will assist you.</p>"),
     ]:
         bc, bc_schema = breadcrumbs([("Home", "/"), (title, None)])
-        content = f"""{head(f"{title} | {NAME}", f"{title} for {NAME}, {B['city']}, NY.", f"/{slug}.html", bc_schema)}
+        content = f"""{head(f"{title} | {NAME}", f"{title} for {NAME}, {B['city']}, NY.", f"/{slug}", bc_schema)}
 {nav()}{bc}
 <section class="page-hero"><div class="container"><h1>{title}</h1></div></section>
 <section class="section"><div class="container" style="max-width:800px">{body}</div></section>
@@ -1702,7 +1702,7 @@ def make_sitemap():
     urls += [(f"/service-areas/{a['slug']}/", "0.8", "monthly") for a in AREAS]
     urls += [("/service-areas/", "0.7", "monthly")]
     urls += [("/about/", "0.6", "monthly"), ("/faq/", "0.7", "monthly"),
-             ("/reviews/", "0.6", "monthly"), ("/request-service.html", "0.8", "monthly")]
+             ("/reviews/", "0.6", "monthly"), ("/request-service", "0.8", "monthly")]
     items = "\n".join(f"""  <url>
     <loc>https://{B['domain']}{u}</loc>
     <lastmod>{today}</lastmod>
@@ -1717,7 +1717,7 @@ def make_sitemap():
 def make_robots():
     write("robots.txt", f"""User-agent: *
 Allow: /
-Disallow: /thank-you.html
+Disallow: /thank-you
 
 Sitemap: https://{B['domain']}/sitemap.xml
 """)
