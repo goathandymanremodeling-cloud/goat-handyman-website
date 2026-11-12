@@ -528,6 +528,16 @@
       "county": "Nassau"
     },
     {
+      "slug": "freeport-ny",
+      "name": "Freeport",
+      "county": "Nassau"
+    },
+    {
+      "slug": "bellmore-ny",
+      "name": "Bellmore",
+      "county": "Nassau"
+    },
+    {
       "slug": "bay-shore-ny",
       "name": "Bay Shore",
       "county": "Suffolk"
