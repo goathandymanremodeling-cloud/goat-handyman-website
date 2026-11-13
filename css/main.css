@@ -1005,6 +1005,13 @@ nav.breadcrumbs {
 .google-badge .review-stars { margin-bottom: 0; }
 .google-badge a { color: var(--green); font-weight: 600; }
 
+/* Google badge on dark inner-page heroes (e.g. /reviews/) — the hero is
+   near-black, so the badge needs light text for the rating and review count
+   to be readable. The light-background version above is unchanged. */
+.page-hero .google-badge { color: rgba(255,255,255,.92); }
+.page-hero .google-badge strong { color: #fff; }
+.page-hero .google-badge a { color: #f4c542; text-decoration: underline; }
+
 /* ── City grid ───────────────────────────────────────────── */
 .city-grid {
   display: grid;
