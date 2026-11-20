@@ -1718,6 +1718,7 @@ def make_robots():
     write("robots.txt", f"""User-agent: *
 Allow: /
 Disallow: /thank-you
+Disallow: /cdn-cgi/
 
 Sitemap: https://{B['domain']}/sitemap.xml
 """)
