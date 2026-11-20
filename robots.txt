@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /thank-you.html
+Disallow: /cdn-cgi/
 
 Sitemap: https://www.goathandymanremodeling.com/sitemap.xml
